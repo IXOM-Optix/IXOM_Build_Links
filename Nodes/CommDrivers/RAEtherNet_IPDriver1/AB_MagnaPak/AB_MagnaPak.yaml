@@ -1,0 +1,153 @@
+Name: AB_MagnaPak
+Id: g=abb57aa80952c40dfb1726727709a310
+Type: RAEtherNetIPStation
+Children:
+- Name: Route
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "192.168.1.98"
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+    - Name: DynamicLinkFormatter
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"","Text":"../../../../Deployment/{0}/PLC/IP_Address"}
+      - Name: ns=7;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../..@BrowseName"
+- Name: StationStatusVariables
+  Type: PropertyGroup
+  Children:
+  - Name: ActiveDataItems
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: ActivityCounter
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: CatalogNumber
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: ControllerName
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: FailedDataItems
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MajorRev
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MinorRev
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: Mode
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: OptimizedBlocks
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: Path
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: Present
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: ProductCode
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: ProductType
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: RecoverableMajorFaults
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: RecoverableMinorFaults
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: RunMode
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Synchronized
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: SyncState
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+  - Name: UnrecoverableMajorFaults
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: UnrecoverableMinorFaults
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: Vendor
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+- Name: OperationCode
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+- Class: Reference
+  Target: ns=5;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml
+- Name: Route_Memory
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "172.17.92.98"

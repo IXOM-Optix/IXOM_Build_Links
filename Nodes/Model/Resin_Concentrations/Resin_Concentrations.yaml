@@ -1,0 +1,27 @@
+Name: Resin_Concentrations
+Type: FolderType
+Children:
+- Name: LocalTimestamp
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Jan 1, 1601, 12:00:00 AM"
+- Name: Contactor
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "1"
+- Name: Top
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 21
+- Name: Upper
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 10
+- Name: Lower
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2
+- Name: Bottom
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 2

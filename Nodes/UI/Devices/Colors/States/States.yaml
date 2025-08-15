@@ -1,0 +1,39 @@
+Name: States
+Type: FolderType
+Children:
+- Name: Alarm
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e11919"
+- Name: Warning
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#e19619"
+- Name: Energized
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#19e119"
+- Name: DeEnergized
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#b4b4b4"
+- Name: Transition
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#f8e71c"
+- Name: Notification
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#f8e71c"
+- Name: ON
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#0fafff"
+- Name: OFF
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#b4b4b4"
+- Name: Replay
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#0fafff"

@@ -1,0 +1,13 @@
+Name: Roles
+Id: g=168315c4ba704e70bb13e35de715eb03
+Type: RolesCategoryFolder
+Children:
+- Name: Setpoints
+  Id: g=790584a5eee769307bb32f265faa9ae4
+  Type: ns=1;RoleType
+- Name: Startup_Config
+  Id: g=b4bbe42bb3e0ff72b585e9aa122355c9
+  Type: ns=1;RoleType
+- Name: Basic_Control
+  Id: g=aee1a1c88189e8ca7c01be1cd256adf8
+  Type: ns=1;RoleType

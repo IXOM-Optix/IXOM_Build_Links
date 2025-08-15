@@ -1,0 +1,55 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: LocalizedClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: CurrentLocale
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "1"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: LocalizedTime
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: LocalizedDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: DBQueryTest
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: Query
+- Name: Clints_Replay_Feature
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: Query
+- Name: RuntimeNetLogic1
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: Method1
+- Name: rt_LogMonthlyReport
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: MonthlyLog

@@ -1,0 +1,47 @@
+Name: Pipes
+Type: FolderType
+Children:
+- Name: Raw_Water
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#05b34a"
+- Name: MIEX_Effluent
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#0fafff"
+- Name: Brine
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#baba15"
+- Name: Fresh_Brine
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#f0f01d"
+- Name: Waste
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#b4b4b4"
+- Name: Common
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#000000"
+- Name: Service_Water
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#106add"
+- Name: Loaded_Resin
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#7c5404"
+- Name: Fresh_Resin
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#b67c07"
+- Name: Carrier
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#dca41c"
+- Name: Compressed_Air
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#ffffff"

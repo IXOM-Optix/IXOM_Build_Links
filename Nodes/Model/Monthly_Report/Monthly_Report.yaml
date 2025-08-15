@@ -1,0 +1,75 @@
+Name: Monthly_Report
+Type: FolderType
+Children:
+- Name: Time_Stamp
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Jan 1, 1601, 12:00:00 AM"
+- Name: Water_Treated
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 1.100000023841858
+- Name: Resin_Regenerated
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 2.200000047683716
+- Name: Treatment_Rate
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 3.299999952316284
+- Name: Contactor_Flow_Rate_Max
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 4.400000095367432
+- Name: Contactor_Flow_Rate_Avg
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 5.5
+- Name: Time_Above_90_Pct_Cap
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 6.599999904632568
+- Name: Time_Above_Capacity
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 7.699999809265137
+- Name: Resin_Bed_Smallest
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 8.800000190734863
+- Name: Resin_Bed_Largest
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 9.899999618530273
+- Name: Resin_Bed_Average
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 10.100000381469727
+- Name: Resin_Added
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 11.109999656677246
+- Name: Salt_Added
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 12.119999885559082
+- Name: Waste_Produced
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 13.130000114440918
+- Name: Service_Water_Consumed
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 14.140000343322754
+- Name: |
+      Power_Consumed
+
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 15.149999618530273
+- Name: |
+      Paused_Time
+
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 16.15999984741211

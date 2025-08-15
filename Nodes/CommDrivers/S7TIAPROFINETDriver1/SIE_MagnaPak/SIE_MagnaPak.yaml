@@ -1,0 +1,74 @@
+Name: SIE_MagnaPak
+Id: g=4a85d4e23a24aa3048f1a241c2d243c2
+Type: S7TiaProfinetStation
+Children:
+- Name: IPAddress
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "172.17.94.98"
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+    - Name: DynamicLinkFormatter
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"","Text":"../../../../Deployment/{0}/PLC/IP_Address"}
+      - Name: ns=7;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../..@BrowseName"
+- Name: Port
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 102
+- Name: Timeout
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:05.0000000"
+- Name: OperationCode
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+- Class: Reference
+  Target: ns=5;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=5;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml
+- Name: Route_Memory
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "172.17.94.98"

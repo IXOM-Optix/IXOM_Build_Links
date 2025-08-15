@@ -1,0 +1,6 @@
+Name: S7TIAPROFINETDriver1
+Type: S7TiaProfinetDriver
+Children:
+- File: SIE_MIEX_Mini/SIE_MIEX_Mini.yaml
+- File: SIE_MagnaPak/SIE_MagnaPak.yaml
+- File: SIE_RHQ/SIE_RHQ.yaml

@@ -1,0 +1,2915 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase1
+  Id: g=a76a83d3b2900b5e55d5d728a7ba9c35
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: SQLiteStoreTable1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Time_Stamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Second_Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Second_Bottom
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+    - Name: VLV_PD_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Position_Actual
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: VLV_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: MTR_PD_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Speed_Actual
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: MTR_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: VFD_PD_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Speed_Actual
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: ALZ
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Control_Setpoint
+          Type: StoreColumn
+          DataType: Float
+        - Name: Control_Setpoint_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Control_PV
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Control_PV_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Control_Out
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Control_Out_Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: SEQ_PD_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Step_Time_Elapsed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Step_Time_Remaining
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_1_Value
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_2_Value
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_3_Value
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: SEQ_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Step_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Step_Time_Elapsed_Units
+          Type: StoreColumn
+          DataType: String
+        - Name: Step_Time_Remaining_Units
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_1
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Test_1_Compare
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_1_Setpoint
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_1_Units
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_2
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Test_2_Compare
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_2_Setpoint
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_2_Units
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_3
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Test_3_Compare
+          Type: StoreColumn
+          DataType: String
+        - Name: Test_3_Setpoint
+          Type: StoreColumn
+          DataType: Float
+        - Name: Test_3_Units
+          Type: StoreColumn
+          DataType: String
+        - Name: Last_Pause_Reason
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: Bool_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Value
+          Type: StoreColumn
+          DataType: Boolean
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: LVL_PD_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Percent
+          Type: StoreColumn
+          DataType: Float
+        - Name: Rate_of_Change
+          Type: StoreColumn
+          DataType: Float
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: LVL_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: DIG_CIV_Logger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+    - Name: Monthly
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Time_Stamp
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InsertValues
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: InsertRowValues
+- Name: AB_MIEX_Mini
+  Id: g=63fbc75c73fc244622515680ad5a50ef
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Upper
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Lower
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+      - Name: RecordLimit
+        Type: BaseDataVariableType
+        DataType: UInt32
+    - Name: RegenData
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Regen_Start_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Complete_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Runtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: Regen_Pause_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Percentage
+          Type: StoreColumn
+          DataType: Float
+        - Name: LR Concentration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reuse_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Fresh_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Op_Level_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resin_Bed
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rewet
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Fresh_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_Returned
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Addition
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resuspend
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Decant
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Bed_Detect
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_Return
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_FR_Transfer
+          Type: StoreColumn
+          DataType: Float
+    - Name: MonthlyReport
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+    - Name: PF_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LB_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: ESTOP_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: PLC_CARD_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: PLC_COM_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: ESTOP_0002_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RIO2_CARD_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RIO2_COM_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Insert_Resin_Concentration
+    Id: g=a4b073c336dc52808d795026ea05dfcf
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_RC
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"DataStore","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"LocalTimestamp","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Contactor","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Top","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Upper","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Lower","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Bottom","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SnF_MonthlyReport
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_Row_MonthlyReport
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TimePurgev0
+    Type: NetLogic
+    Children:
+    - Name: RecordPersistenceInterval
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "2:12:00:00.0000000"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PollingTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:01:00.0000000"
+    - Class: Method
+      Name: datePurge
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"table","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"date","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: AB_MagnaPak
+  Id: g=31f22f933755e7bb6fb571169be841e6
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Upper
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Lower
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RegenData
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Regen_Start_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Complete_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Runtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: Regen_Pause_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Percentage
+          Type: StoreColumn
+          DataType: Float
+        - Name: LR Concentration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reuse_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Fresh_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Op_Level_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resin_Bed
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rewet
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Fresh_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_Returned
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Addition
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resuspend
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Decant
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Bed_Detect
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_Return
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_FR_Transfer
+          Type: StoreColumn
+          DataType: Float
+    - Name: MonthlyReport
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+    - Name: ESTOP_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: PM_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LSH_2100_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: FS_2100_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LSH_2200_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: FS_2200_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LSH_6100_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LSH_6200_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: PF_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LB_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Insert_Resin_Concentration
+    Id: g=2a847015e5c8270a6f6d2258baf85701
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_RC
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"DataStore","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"LocalTimestamp","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Contactor","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Top","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Upper","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Lower","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Bottom","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SnF_MonthlyReport
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_Row_MonthlyReport
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TimePurgev1
+    Type: NetLogic
+    Children:
+    - Name: RecordPersistenceInterval
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "2:12:00:00.0000000"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PollingTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:01:00.0000000"
+    - Class: Method
+      Name: datePurge
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"table","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"date","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: SIE_MagnaPak
+  Id: g=897eefb44254a4b7e7ead33a7757be6e
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Upper
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Lower
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RegenData
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Regen_Start_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Complete_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Runtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: Regen_Pause_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Percentage
+          Type: StoreColumn
+          DataType: Float
+        - Name: LR Concentration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reuse_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Fresh_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Op_Level_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resin_Bed
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rewet
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Fresh_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_Returned
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Addition
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resuspend
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Decant
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Bed_Detect
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_Return
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_FR_Transfer
+          Type: StoreColumn
+          DataType: Float
+    - Name: MonthlyReport
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Insert_Resin_Concentration
+    Id: g=869fa779ac3ad80005469965d2c005e9
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_RC
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"DataStore","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"LocalTimestamp","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Contactor","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Top","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Upper","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Lower","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Bottom","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SnF_MonthlyReport
+    Id: g=f7a05d48c135706237977b73b7051b55
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_Row_MonthlyReport
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TimePurgev2
+    Type: NetLogic
+    Children:
+    - Name: RecordPersistenceInterval
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "2:12:00:00.0000000"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PollingTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:01:00.0000000"
+    - Class: Method
+      Name: datePurge
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"table","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"date","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: SIE_MIEX_Mini
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Upper
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Lower
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RegenData
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Regen_Start_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Complete_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Runtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: Regen_Pause_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Percentage
+          Type: StoreColumn
+          DataType: Float
+        - Name: LR Concentration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reuse_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Fresh_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Op_Level_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resin_Bed
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rewet
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Fresh_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_Returned
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Addition
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resuspend
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Decant
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Bed_Detect
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_Return
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_FR_Transfer
+          Type: StoreColumn
+          DataType: Float
+    - Name: MonthlyReport
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Insert_Resin_Concentration
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_RC
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"DataStore","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"LocalTimestamp","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Contactor","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Top","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Upper","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Lower","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Bottom","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SnF_MonthlyReport
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_Row_MonthlyReport
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TimePurgev3
+    Type: NetLogic
+    Children:
+    - Name: RecordPersistenceInterval
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "2:12:00:00.0000000"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PollingTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:01:00.0000000"
+    - Class: Method
+      Name: datePurge
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"table","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"date","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Newport_ME
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: ResinConcentrations
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Contactor
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Top
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Upper
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Lower
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Bottom
+          Type: StoreColumn
+          DataType: Int16
+    - Name: RegenData
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Number
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Regen_Start_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Complete_Time
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Regen_Runtime
+          Type: StoreColumn
+          DataType: Float
+        - Name: Regen_Pause_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Percentage
+          Type: StoreColumn
+          DataType: Float
+        - Name: LR Concentration
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reuse_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Fresh_Brine_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: Op_Level_Cond
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resin_Bed
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rewet
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Reuse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Fresh_Brine
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_Returned
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Addition
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_Breakthru
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Rinse_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: BV_Resuspend
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Decant
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Bed_Detect
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_to_Waste
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_Brine_Return
+          Type: StoreColumn
+          DataType: Float
+        - Name: Drain_Rate_FR_Transfer
+          Type: StoreColumn
+          DataType: Float
+    - Name: MonthlyReport
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+    - Name: PF_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LB_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: ESTOP_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: PM_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LS_0311_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+  - Class: Reference
+    Target: ns=31;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=31;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: InMemory
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Insert_Resin_Concentration
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_RC
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"DataStore","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"LocalTimestamp","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Contactor","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Top","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Upper","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Lower","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"Bottom","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SnF_MonthlyReport
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Insert_Row_MonthlyReport
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: TimePurgev4
+    Type: NetLogic
+    Children:
+    - Name: RecordPersistenceInterval
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "2:12:00:00.0000000"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: PollingTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:01:00.0000000"
+    - Class: Method
+      Name: datePurge
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"table","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"date","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

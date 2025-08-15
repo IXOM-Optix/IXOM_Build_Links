@@ -1,0 +1,675 @@
+Name: IFM
+Type: FolderType
+Children:
+- Name: SM8601
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM8601"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM8601"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM8601.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM8601.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SM8601"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Magnetic-Inductive Flow Meter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.1 - 26.4 gpm "
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1\" NPT Internal thread"
+- Name: SM9601
+  Id: g=f32c1fac5de64a4399acd08044593b34
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM9601"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM9601"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM9601.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM9601.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SM9601"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Magnetic-Inductive Flow Meter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1.3 - 80 gpm "
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1 1/2\" NPT Internal thread"
+- Name: SM2601
+  Id: g=d11cec7cabde91429a8eae3ee1b92f0a
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM2601"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SM2601"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM2601.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SM2601.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SM2601"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Magnetic-Inductive Flow Meter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1.3 - 160 gpm "
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2\" NPT Internal thread"
+- Name: PX3228
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX3228"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX3228"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX3228.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX3228.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/PX3228"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pressure Transmitter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0-100 inH2O"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/4\" NPT external thread"
+- Name: PX9117
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX9117"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX9117"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX9117.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX9117.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/PX9117"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pressure Transmitter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0-15 psi"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/4\" NPT external thread"
+- Name: PX3226
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX3226"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PX3226"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX3226.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PX3226.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/PX3226"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pressure Transmitter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0-30 psi"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/4\" NPT external thread"
+- Name: PN2696
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PN2696"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PN2696"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PN2696.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/PN2696.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/PN2696"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Pressure Transmitter with Display"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "-1.8 - 36.25 psi"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/4\" NPT external thread"
+- Name: SD6501
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SD6501"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SD6501"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SD6501.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SD6501.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SD6501"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Mass Air Flow Meter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.15 - 44.15 scfm"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/2\" NPT external thread"
+- Name: LDL220
+  Id: g=ae01ee821ce891dd8783e6b3551afe37
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LDL220"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LDL220"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LDL220.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LDL220.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/LDL220"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Conductivity Transmitter"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0 - 1,000 mS/cm"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "G 1/2 external thread sealing cone"
+- Name: LMT102
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT102"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT102"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT102.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT102.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/LMT102"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level Switch"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "38mm (1.5\")"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: " G 1/2 sealing cone"
+- Name: LMT104
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT104"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT104"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT104.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT104.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/LMT104"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level Switch"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "153mm (6\")"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: " G 1/2 sealing cone"
+- Name: LMT105
+  Id: g=731f4920815a47064a749093f2bd1aa9
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT105"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "LMT105"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT105.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/LMT105.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/LMT105"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Level Switch"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "253mm (10\")"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: " G 1/2 sealing cone"
+- Name: SR5900
+  Id: g=8d0e153191c6a6a675eb81d7b38ba8ff
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SR5900"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SR5900"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SR5900.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SR5900.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SR5900"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flow Switch"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flow Switch Control Montitor"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: " 1 x M12; coding: A"
+- Name: SF6201
+  Id: g=dbcfa664000b3baa2563ed3ae7505ad6
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SF6201"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SF6201"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SF6201.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/SF6201.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/SF6201"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flow sensor"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Flow Switch Probe"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ø 10 mm, M12"
+- Name: E40174
+  Id: g=e12815c0d9afa05346da85a894e90b8d
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E40174"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E40174"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E40174.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E40174.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/E40174"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Clamp fitting for process sensors"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Ø 10 mm Process Connection"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1/2\" NPT External Thread"
+- Name: E43313
+  Id: g=b082f734d4d31edfea6ec6ba81e1005c
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E43313"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E43313"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E43313.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E43313.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/E43313"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Screw-in adapter bushing"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "G 1/2 sealing cone Process Connection"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "3/4\" NPT External Thread"
+- Name: E11145
+  Id: g=ee99e96bd98d579fcbb59caa09c9de58
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "IFM"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E11145"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "E11145"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E11145.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/E11145.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://www.ifm.com/us/en/product/E11145"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "M12, Strait A Coded"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Conductor 0.34...0.75 mm², Cable sheath: Ø 4...7.5 mm"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Conductor 22...18, Cable sheath: Ø 0.15....0.30 in"

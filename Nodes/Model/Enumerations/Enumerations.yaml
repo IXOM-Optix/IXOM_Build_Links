@@ -1,0 +1,3520 @@
+Name: Enumerations
+Type: FolderType
+Children:
+- Class: DataType
+  Name: Enum_MM_Step_Numbers
+  Id: g=4b3c6f787e43a5990badfed81b85a83c
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_MM_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4b3c6f787e43a5990badfed81b85a83c",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 0 - Valves in Auto"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Standby"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - Duty / Wait for Raw Water"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Open Valves"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Fluidize Bed"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Water Treatment"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 6 - Close Valves"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 7 - Regen Starting"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 8 - Acquire Service Water"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 9 - Flush Underdrains"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 10 - Resin Settle"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 11 - Acquire Brine & Waste"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 12 - Add Brine"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 13 - Brine Soak"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 14 - Acquire Rinse"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 15 - Brine to Waste"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 16 - Brine Recovery"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 17 - Rinse to Waste"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 18 - Regen Complete"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 19"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 20 - Acquire Virgin Resin"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 21 - Set Suction to VR"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 22 - Add Virgin Resin"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 23 - Reset VR Totalizer"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 24 - Set Suction to Brine"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 99 - Paused"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Valves in Auto"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Standby"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Duty / Wait for Raw Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Open Valves"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Fluidize Bed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Water Treatment"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Close Valves"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Regen Starting"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Acquire Service Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Flush Underdrains"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Resin Settle"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Acquire Brine & Waste"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Add Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Brine Soak"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"Step 14 - Acquire Rinse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"Step 15 - Brine to Waste"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"Step 16 - Brine Recovery"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"Step 17 - Rinse to Waste"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"Step 18 - Regen Complete"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"Step 19"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"Step 20 - Acquire Virgin Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"Step 21 - Set Suction to VR"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"Step 22 - Add Virgin Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"Step 23 - Reset VR Totalizer"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"Step 24 - Set Suction to Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_MM_Pause_Reasons
+  Id: g=015277dbbb6a77e102d3d2cb2f7d406c
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_MM_Pause_Reasons",
+    "DataType": {
+     "IdType": 2,
+     "Id": "015277dbbb6a77e102d3d2cb2f7d406c",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Paused - Via Operator"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 Paused - System/Emergency Stop"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#3 Paused - Valve Failure"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#4 Paused - Power Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#5 Paused - IO Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#6 Paused - Raw Water Flow Transmitter"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#7 Paused - Waste Flow Transmitter"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#8 Paused - Waste Flow Conductivity"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#9 Paused - Brine System Failure"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#10 Paused - Service Water System Failure"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#11 Paused - Regen Permit (Auto Resume)"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#12 Paused - Max Regen Time Exceeded"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#13 Paused - Feed System Low Level NA"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#14 Paused - Brine Tank Low (Auto Resume)"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#15 Paused - Comm Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#16 Paused - Low Battery (Auto Resume)"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#17 Paused - Low Brine Drain Rate (Auto Resume)"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18
+     },{
+      "Name": "Value19",
+      "Value": 19
+     },{
+      "Name": "Value20",
+      "Value": 20
+     },{
+      "Name": "Value21",
+      "Value": 21
+     },{
+      "Name": "Value22",
+      "Value": 22
+     },{
+      "Name": "Value23",
+      "Value": 23
+     },{
+      "Name": "Value24",
+      "Value": 24
+     },{
+      "Name": "Value25",
+      "Value": 25
+     },{
+      "Name": "Value26",
+      "Value": 26
+     },{
+      "Name": "Value27",
+      "Value": 27
+     },{
+      "Name": "Value28",
+      "Value": 28
+     },{
+      "Name": "Value29",
+      "Value": 29
+     },{
+      "Name": "Value30",
+      "Value": 30
+     },{
+      "Name": "Value31",
+      "Value": 31
+     },{
+      "Name": "Value32",
+      "Value": 32
+     },{
+      "Name": "Value33",
+      "Value": 33
+     },{
+      "Name": "Value34",
+      "Value": 34
+     },{
+      "Name": "Value35",
+      "Value": 35
+     },{
+      "Name": "Value36",
+      "Value": 36
+     },{
+      "Name": "Value37",
+      "Value": 37
+     },{
+      "Name": "Value38",
+      "Value": 38
+     },{
+      "Name": "Value39",
+      "Value": 39
+     },{
+      "Name": "Value40",
+      "Value": 40
+     },{
+      "Name": "Value41",
+      "Value": 41
+     },{
+      "Name": "Value42",
+      "Value": 42
+     },{
+      "Name": "Value43",
+      "Value": 43
+     },{
+      "Name": "Value44",
+      "Value": 44
+     },{
+      "Name": "Value45",
+      "Value": 45
+     },{
+      "Name": "Value46",
+      "Value": 46
+     },{
+      "Name": "Value47",
+      "Value": 47
+     },{
+      "Name": "Value48",
+      "Value": 48
+     },{
+      "Name": "Value49",
+      "Value": 49
+     },{
+      "Name": "Value50",
+      "Value": 50
+     },{
+      "Name": "Value51",
+      "Value": 51
+     },{
+      "Name": "Value52",
+      "Value": 52
+     },{
+      "Name": "Value53",
+      "Value": 53
+     },{
+      "Name": "Value54",
+      "Value": 54
+     },{
+      "Name": "Value55",
+      "Value": 55
+     },{
+      "Name": "Value56",
+      "Value": 56
+     },{
+      "Name": "Value57",
+      "Value": 57
+     },{
+      "Name": "Value58",
+      "Value": 58
+     },{
+      "Name": "Value59",
+      "Value": 59
+     },{
+      "Name": "Value60",
+      "Value": 60
+     },{
+      "Name": "Value61",
+      "Value": 61
+     },{
+      "Name": "Value62",
+      "Value": 62
+     },{
+      "Name": "Value63",
+      "Value": 63
+     },{
+      "Name": "Value64",
+      "Value": 64
+     },{
+      "Name": "Value65",
+      "Value": 65
+     },{
+      "Name": "Value66",
+      "Value": 66
+     },{
+      "Name": "Value67",
+      "Value": 67
+     },{
+      "Name": "Value68",
+      "Value": 68
+     },{
+      "Name": "Value69",
+      "Value": 69
+     },{
+      "Name": "Value70",
+      "Value": 70
+     },{
+      "Name": "Value71",
+      "Value": 71
+     },{
+      "Name": "Value72",
+      "Value": 72
+     },{
+      "Name": "Value73",
+      "Value": 73
+     },{
+      "Name": "Value74",
+      "Value": 74
+     },{
+      "Name": "Value75",
+      "Value": 75
+     },{
+      "Name": "Value76",
+      "Value": 76
+     },{
+      "Name": "Value77",
+      "Value": 77
+     },{
+      "Name": "Value78",
+      "Value": 78
+     },{
+      "Name": "Value79",
+      "Value": 79
+     },{
+      "Name": "Value80",
+      "Value": 80
+     },{
+      "Name": "Value81",
+      "Value": 81
+     },{
+      "Name": "Value82",
+      "Value": 82
+     },{
+      "Name": "Value83",
+      "Value": 83
+     },{
+      "Name": "Value84",
+      "Value": 84
+     },{
+      "Name": "Value85",
+      "Value": 85
+     },{
+      "Name": "Value86",
+      "Value": 86
+     },{
+      "Name": "Value87",
+      "Value": 87
+     },{
+      "Name": "Value88",
+      "Value": 88
+     },{
+      "Name": "Value89",
+      "Value": 89
+     },{
+      "Name": "Value90",
+      "Value": 90
+     },{
+      "Name": "Value91",
+      "Value": 91
+     },{
+      "Name": "Value92",
+      "Value": 92
+     },{
+      "Name": "Value93",
+      "Value": 93
+     },{
+      "Name": "Value94",
+      "Value": 94
+     },{
+      "Name": "Value95",
+      "Value": 95
+     },{
+      "Name": "Value96",
+      "Value": 96
+     },{
+      "Name": "Value97",
+      "Value": 97
+     },{
+      "Name": "Value98",
+      "Value": 98
+     },{
+      "Name": "Value99",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#99 Via Operator"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Paused - Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Paused - System/Emergency Stop"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 Paused - Valve Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Paused - Power Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Paused - IO Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 Paused - Raw Water Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Paused - Waste Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Paused - Waste Flow Conductivity"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Paused - Brine System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 Paused - Service Water System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 Paused - Regen Permit (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 Paused - Max Regen Time Exceeded"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"#13 Paused - Feed System Low Level NA"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"#14 Paused - Brine Tank Low (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"#15 Paused - Comm Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"#16 Paused - Low Battery (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"#17 Paused - Low Brine Drain Rate (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_MM_Mode
+  Id: g=bfaaf0c372f0a044c84985984aa377dd
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_MM_Mode",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bfaaf0c372f0a044c84985984aa377dd",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Last Running"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Alternate"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Highest Bed Volume"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Last Running"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Alternate"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Highest Bed Volume"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_Regen_Step_Numbers
+  Id: g=52398ae3099e40bc8cb26dafac1721d7
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_Regen_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "52398ae3099e40bc8cb26dafac1721d7",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 0 - Counting Down"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Assign Loaded Resin Transfer"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - Backflush Loaded Resin Transf"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Fill Loaded Resin"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Mix Loaded Resin"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Settle Loaded Resin"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 6 - Backflush Underdrain 1"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 7 - Resin Bed Detection"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 8 - Assign Service Water 1"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 9 - Add Resin Bed Water"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 10 - Mix Resin Bed"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 11 - Settle Resin Bed"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 12 - Backflush Underdrain 2"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 13 - Drain Carrier Water 2"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 14 - Assign Reuse Brine"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 15 - Add Reuse Brine"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 16 - Backflush Underdrain 3"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 17 - Drain Carrier Water 3"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 18 - Drain Reuse To Waste"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 19 - Drain Reuse Brine 1"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 20 - Assign Fresh Brine"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 21 - Add Fresh Brine"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 22 - Backflush Underdrain 4"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 23 - Drain Reuse/Waste Brine 2"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 24 - Brine Soak"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 25,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 25 - Assign Service Water 2"
+      }
+     },{
+      "Name": "Value26",
+      "Value": 26,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 26 - Fill Rinse Water"
+      }
+     },{
+      "Name": "Value27",
+      "Value": 27,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 27 - Backflush Underdrain 5"
+      }
+     },{
+      "Name": "Value28",
+      "Value": 28,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 28 - Drain Brine to Reuse"
+      }
+     },{
+      "Name": "Value29",
+      "Value": 29,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 29 - Drain Reuse/Waste Brine 2"
+      }
+     },{
+      "Name": "Value30",
+      "Value": 30,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 30 - Assign Service Water 3"
+      }
+     },{
+      "Name": "Value31",
+      "Value": 31,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 31 - Fill Resuspend Water 1"
+      }
+     },{
+      "Name": "Value32",
+      "Value": 32,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 32 - Resuspend Mix Time"
+      }
+     },{
+      "Name": "Value33",
+      "Value": 33,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 33 - Assign Fresh Resin Transfer"
+      }
+     },{
+      "Name": "Value34",
+      "Value": 34,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 34 - Flush Fresh Resin Line"
+      }
+     },{
+      "Name": "Value35",
+      "Value": 35,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 35 - Drain Fresh Resin 1"
+      }
+     },{
+      "Name": "Value36",
+      "Value": 36,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 36 - Assign Service Water 4"
+      }
+     },{
+      "Name": "Value37",
+      "Value": 37,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 37 - Fill Resuspend Water 2"
+      }
+     },{
+      "Name": "Value38",
+      "Value": 38,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 38 - Drain Fresh Resin 2"
+      }
+     },{
+      "Name": "Value39",
+      "Value": 39,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 39 - Drain Fresh Resin 3"
+      }
+     },{
+      "Name": "Value40",
+      "Value": 40,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 40 - Regen Complete"
+      }
+     },{
+      "Name": "Value41",
+      "Value": 41,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 41 - Not Used"
+      }
+     },{
+      "Name": "Value42",
+      "Value": 42,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 42 - Fr Transfer (Off Time)"
+      }
+     },{
+      "Name": "Value43",
+      "Value": 43,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 43 - Not Used"
+      }
+     },{
+      "Name": "Value44",
+      "Value": 44,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 44 - Not Used"
+      }
+     },{
+      "Name": "Value45",
+      "Value": 45,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 45 - Not Used"
+      }
+     },{
+      "Name": "Value46",
+      "Value": 46,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 46 - Not Used"
+      }
+     },{
+      "Name": "Value47",
+      "Value": 47,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 47 - Not Used"
+      }
+     },{
+      "Name": "Value48",
+      "Value": 48,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 48 - Not Used"
+      }
+     },{
+      "Name": "Value49",
+      "Value": 49,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 49 - Not Used"
+      }
+     },{
+      "Name": "Value50",
+      "Value": 50,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 50 - Assign Virgin Resin Skid"
+      }
+     },{
+      "Name": "Value51",
+      "Value": 51,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 51 - Fill Virgin Resin (Wait for OP)"
+      }
+     },{
+      "Name": "Value52",
+      "Value": 52,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 52 - Assign Service Water"
+      }
+     },{
+      "Name": "Value53",
+      "Value": 53,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 53 - Fill Service Water"
+      }
+     },{
+      "Name": "Value54",
+      "Value": 54,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 54 - Mix Virgin Resin"
+      }
+     },{
+      "Name": "Value55",
+      "Value": 55,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 55 - Assign Fresh Resin"
+      }
+     },{
+      "Name": "Value56",
+      "Value": 56,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 56 - Flush Fresh Resin Line"
+      }
+     },{
+      "Name": "Value57",
+      "Value": 57,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 57 - Transfer Virgin Resin"
+      }
+     },{
+      "Name": "Value58",
+      "Value": 58,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 58 - Virgin Resin Add Complete"
+      }
+     },{
+      "Name": "Value59",
+      "Value": 59,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 59 - Not Used"
+      }
+     },{
+      "Name": "Value60",
+      "Value": 60,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 60 - Not Used"
+      }
+     },{
+      "Name": "Value61",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 99 - Paused"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Counting Down"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Assign Loaded Resin Transfer"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Backflush Loaded Resin Transf"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Fill Loaded Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Mix Loaded Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Settle Loaded Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Backflush Underdrain 1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Resin Bed Detection"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Assign Service Water 1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Add Resin Bed Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Mix Resin Bed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Settle Resin Bed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Backflush Underdrain 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Drain Carrier Water 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"Step 14 - Assign Reuse Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"Step 15 - Add Reuse Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"Step 16 - Backflush Underdrain 3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"Step 17 - Drain Carrier Water 3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"Step 18 - Drain Reuse To Waste"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"Step 19 - Drain Reuse Brine 1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"Step 20 - Assign Fresh Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"Step 21 - Add Fresh Brine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"Step 22 - Backflush Underdrain 4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"Step 23 - Drain Reuse/Waste Brine 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"Step 24 - Brine Soak"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"Step 25 - Assign Service Water 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"Step 26 - Fill Rinse Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"LocaleId":"en-US","Text":"Step 27 - Backflush Underdrain 5"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"Step 28 - Drain Brine to Reuse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"LocaleId":"en-US","Text":"Step 29 - Drain Reuse/Waste Brine 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"Step 30 - Assign Service Water 3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"Step 31 - Fill Resuspend Water 1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"Step 32 - Resuspend Mix Time"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"Step 33 - Assign Fresh Resin Transfer"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"Step 34 - Flush Fresh Resin Line"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"Step 35 - Drain Fresh Resin 1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"Step 36 - Assign Service Water 4"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"Step 37 - Fill Resuspend Water 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"Step 38 - Drain Fresh Resin 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"Step 39 - Drain Fresh Resin 3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"Step 40 - Regen Complete"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"LocaleId":"en-US","Text":"Step 41 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"LocaleId":"en-US","Text":"Step 42 - Fr Transfer (Off Time)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"LocaleId":"en-US","Text":"Step 43 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"LocaleId":"en-US","Text":"Step 44 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"LocaleId":"en-US","Text":"Step 45 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"LocaleId":"en-US","Text":"Step 46 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"LocaleId":"en-US","Text":"Step 47 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"LocaleId":"en-US","Text":"Step 48 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"LocaleId":"en-US","Text":"Step 49 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"LocaleId":"en-US","Text":"Step 50 - Assign Virgin Resin Skid"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"LocaleId":"en-US","Text":"Step 51 - Fill Virgin Resin (Wait for OP)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"LocaleId":"en-US","Text":"Step 52 - Assign Service Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"LocaleId":"en-US","Text":"Step 53 - Fill Service Water"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"LocaleId":"en-US","Text":"Step 54 - Mix Virgin Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"LocaleId":"en-US","Text":"Step 55 - Assign Fresh Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"LocaleId":"en-US","Text":"Step 56 - Flush Fresh Resin Line"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"LocaleId":"en-US","Text":"Step 57 - Transfer Virgin Resin"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"LocaleId":"en-US","Text":"Step 58 - Virgin Resin Add Complete"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"LocaleId":"en-US","Text":"Step 59 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"LocaleId":"en-US","Text":"Step 60 - Not Used"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_Regen_Pause_Reasons
+  Id: g=8e22d0a43a54731b3b1961a232f7cd4b
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_Regen_Pause_Reasons",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8e22d0a43a54731b3b1961a232f7cd4b",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Via Operator"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 System/Emergency Stop"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#3 System I/O Failure"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#4 Loss of System Power"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "System will Auto Resume when\nPower Failure Alarm has cleared"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#5 Power Quality"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Call Electrictian to verify\nPower Quality Before Resuming "
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#6 System Air Pressure"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "System will Auto Resume when \nSystem air pressure in normal."
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#7 Regen Tank Mixer Fault"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#8 Level Transmitter Failure"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#9 High Level Switch"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Ensure No valves are leaking past\nand filling the Regen Tank.  \nManually drain Regen Tank\nand \"Resume\""
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#10 Loaded Resin Equipment Failure"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#11 Decant Equipment Failure"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#12 Service Water Equipment Failure"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#13 Reuse Brine Equipment Failure"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#14 Fresh Brine Equipment Failure"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#15 Fresh Resin Equipment Failure"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#16  Fresh Resin Line Flush Failure"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#17 Loaded Resin Line Flush Failure"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#18 AOP System Failure"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#19 Level Too High to Start Regen"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Tank should have been Empty\nWhen starting regeneration sequence\nManualy empty tank checking for Brine\nand then resume"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#20 Underdrain Equipment Failure"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#21 Underdrain Conductivity"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#22 Waste Tank Full"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "When Waste Tank has returned to \nNormal the system will \nAuto Recover"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#23 High Resin Bed Volume"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Resin Bed is Larger than expected.\nIf this was a false resin bed detection \ndue to a low drain rate, correct the \nissue and press \"Resume\".\nIf this was a real resin be detection,\nPress \"Recover\"\n\nRecover no more than Once\n"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#24 Low Resin Bed Volume"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Resin Bed is Smaller than expected.\nCheck Resin Concentrations in Contactor\nLow Resin Concentrations accelerate\nResin Loss!\n\nRecover No more than once"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 25,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#25 U/drain Drain Rate or Bed Expanded"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Underdrain Drain Rate is insuffient\nand has lead to a \"Bed Detection\"\nCorrect Drain Rate issue and \"Resume\""
+      }
+     },{
+      "Name": "Value26",
+      "Value": 26,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#26 Fresh Resin Drain Rate"
+      }
+     },{
+      "Name": "Value27",
+      "Value": 27,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#27 Loaded Resin Fill Rate"
+      }
+     },{
+      "Name": "Value28",
+      "Value": 28,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#28 Service Water Fill Rate"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value29",
+      "Value": 29,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#29 Reuse Brine Fill Rate"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Ensure the following:\nValves are open,\nPump is Running, not airlocked"
+      }
+     },{
+      "Name": "Value30",
+      "Value": 30,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#30 Fresh Brine Fill Rate"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Ensure the following:\nValves are open,\nPump is Running, not airlocked\nPump suction is not restricted"
+      }
+     },{
+      "Name": "Value31",
+      "Value": 31,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#31 No Brine Breakthrough"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Ensure the following:\nThere is salt in the saturator \nReuse Brine Strength is over 120mS/cm\nConductivity probe operation."
+      }
+     },{
+      "Name": "Value32",
+      "Value": 32,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#32 Bed Detect in Drain Rinse to Waste"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "System has tried to rinse but \nstill detects too high of Salt content.\nVerify Conductivity probe operation."
+      }
+     },{
+      "Name": "Value33",
+      "Value": 33,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#33 Paused -"
+      }
+     },{
+      "Name": "Value34",
+      "Value": 34,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#34 Paused -"
+      }
+     },{
+      "Name": "Value35",
+      "Value": 35,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#35 Paused -"
+      }
+     },{
+      "Name": "Value36",
+      "Value": 36,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#36 Paused -"
+      }
+     },{
+      "Name": "Value37",
+      "Value": 37,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#37 Paused -"
+      }
+     },{
+      "Name": "Value38",
+      "Value": 38,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#38 Paused -"
+      }
+     },{
+      "Name": "Value39",
+      "Value": 39,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#39 Paused -"
+      }
+     },{
+      "Name": "Value40",
+      "Value": 40,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#40 Paused -"
+      }
+     },{
+      "Name": "Value41",
+      "Value": 41,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#41 Paused -"
+      }
+     },{
+      "Name": "Value42",
+      "Value": 42,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#42 Paused -"
+      }
+     },{
+      "Name": "Value43",
+      "Value": 43,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#43 Paused -"
+      }
+     },{
+      "Name": "Value44",
+      "Value": 44,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#44 Paused -"
+      }
+     },{
+      "Name": "Value45",
+      "Value": 45,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#45 Paused -"
+      }
+     },{
+      "Name": "Value46",
+      "Value": 46,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#46 Paused -"
+      }
+     },{
+      "Name": "Value47",
+      "Value": 47,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#47 Paused -"
+      }
+     },{
+      "Name": "Value48",
+      "Value": 48,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#48 Paused -"
+      }
+     },{
+      "Name": "Value49",
+      "Value": 49,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#49 Paused -"
+      }
+     },{
+      "Name": "Value50",
+      "Value": 50,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#50 Paused -"
+      }
+     },{
+      "Name": "Value51",
+      "Value": 51,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#51 Paused -"
+      }
+     },{
+      "Name": "Value52",
+      "Value": 52,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#52 Paused -"
+      }
+     },{
+      "Name": "Value53",
+      "Value": 53,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#53 Paused -"
+      }
+     },{
+      "Name": "Value54",
+      "Value": 54,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#54 Paused -"
+      }
+     },{
+      "Name": "Value55",
+      "Value": 55,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#55 Paused -"
+      }
+     },{
+      "Name": "Value56",
+      "Value": 56,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#56 Paused -"
+      }
+     },{
+      "Name": "Value57",
+      "Value": 57,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#57 Paused -"
+      }
+     },{
+      "Name": "Value58",
+      "Value": 58,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#58 Paused -"
+      }
+     },{
+      "Name": "Value59",
+      "Value": 59,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#59 Paused -"
+      }
+     },{
+      "Name": "Value60",
+      "Value": 60,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#60 Paused -"
+      }
+     },{
+      "Name": "Value61",
+      "Value": 61,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#61 Paused -"
+      }
+     },{
+      "Name": "Value62",
+      "Value": 62,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#62 Paused -"
+      }
+     },{
+      "Name": "Value63",
+      "Value": 63,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#63 Paused -"
+      }
+     },{
+      "Name": "Value64",
+      "Value": 64,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#64 Paused -"
+      }
+     },{
+      "Name": "Value65",
+      "Value": 65,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#65 Paused -"
+      }
+     },{
+      "Name": "Value66",
+      "Value": 66,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#66 Paused -"
+      }
+     },{
+      "Name": "Value67",
+      "Value": 67,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#67 Paused -"
+      }
+     },{
+      "Name": "Value68",
+      "Value": 68,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#68 Paused -"
+      }
+     },{
+      "Name": "Value69",
+      "Value": 69,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#69 Paused -"
+      }
+     },{
+      "Name": "Value70",
+      "Value": 70,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#70 Paused -"
+      }
+     },{
+      "Name": "Value71",
+      "Value": 71,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#71 Paused -"
+      }
+     },{
+      "Name": "Value72",
+      "Value": 72,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#72 Paused -"
+      }
+     },{
+      "Name": "Value73",
+      "Value": 73,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#73 Paused -"
+      }
+     },{
+      "Name": "Value74",
+      "Value": 74,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#74 Paused -"
+      }
+     },{
+      "Name": "Value75",
+      "Value": 75,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#75 Paused -"
+      }
+     },{
+      "Name": "Value76",
+      "Value": 76,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#76 Paused -"
+      }
+     },{
+      "Name": "Value77",
+      "Value": 77,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#77 Paused -"
+      }
+     },{
+      "Name": "Value78",
+      "Value": 78,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#78 Paused -"
+      }
+     },{
+      "Name": "Value79",
+      "Value": 79,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#79 Paused -"
+      }
+     },{
+      "Name": "Value80",
+      "Value": 80,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#80 Paused -"
+      }
+     },{
+      "Name": "Value81",
+      "Value": 81,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#81 Paused -"
+      }
+     },{
+      "Name": "Value82",
+      "Value": 82,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#82 Paused -"
+      }
+     },{
+      "Name": "Value83",
+      "Value": 83,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#83 Paused -"
+      }
+     },{
+      "Name": "Value84",
+      "Value": 84,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#84 Paused -"
+      }
+     },{
+      "Name": "Value85",
+      "Value": 85,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#85 Paused -"
+      }
+     },{
+      "Name": "Value86",
+      "Value": 86,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#86 Paused -"
+      }
+     },{
+      "Name": "Value87",
+      "Value": 87,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#87 Paused -"
+      }
+     },{
+      "Name": "Value88",
+      "Value": 88,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#88 Paused -"
+      }
+     },{
+      "Name": "Value89",
+      "Value": 89,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#89 Paused -"
+      }
+     },{
+      "Name": "Value90",
+      "Value": 90,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#90 Paused -"
+      }
+     },{
+      "Name": "Value91",
+      "Value": 91,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#91 Paused -"
+      }
+     },{
+      "Name": "Value92",
+      "Value": 92,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#92 Paused -"
+      }
+     },{
+      "Name": "Value93",
+      "Value": 93,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#93 Paused -"
+      }
+     },{
+      "Name": "Value94",
+      "Value": 94,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#94 Paused -"
+      }
+     },{
+      "Name": "Value95",
+      "Value": 95,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#95 Paused -"
+      }
+     },{
+      "Name": "Value96",
+      "Value": 96,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#96 Paused -"
+      }
+     },{
+      "Name": "Value97",
+      "Value": 97,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#97 Paused -"
+      }
+     },{
+      "Name": "Value98",
+      "Value": 98,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#98 Paused -"
+      }
+     },{
+      "Name": "Value99",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#99 Paused  -"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 System/Emergency Stop"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 System I/O Failure"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Loss of System Power"},"Description":{"LocaleId":"en-US","Text":"System will Auto Resume when\nPower Failure Alarm has cleared"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Power Quality"},"Description":{"LocaleId":"en-US","Text":"Call Electrictian to verify\nPower Quality Before Resuming "}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 System Air Pressure"},"Description":{"LocaleId":"en-US","Text":"System will Auto Resume when \nSystem air pressure in normal."}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Regen Tank Mixer Fault"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Level Transmitter Failure"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 High Level Switch"},"Description":{"LocaleId":"en-US","Text":"Ensure No valves are leaking past\nand filling the Regen Tank.  \nManually drain Regen Tank\nand \"Resume\""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 Loaded Resin Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 Decant Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 Service Water Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"#13 Reuse Brine Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"#14 Fresh Brine Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"#15 Fresh Resin Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"#16  Fresh Resin Line Flush Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"#17 Loaded Resin Line Flush Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"#18 AOP System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"#19 Level Too High to Start Regen"},"Description":{"LocaleId":"en-US","Text":"Tank should have been Empty\nWhen starting regeneration sequence\nManualy empty tank checking for Brine\nand then resume"}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"#20 Underdrain Equipment Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"#21 Underdrain Conductivity"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"#22 Waste Tank Full"},"Description":{"LocaleId":"en-US","Text":"When Waste Tank has returned to \nNormal the system will \nAuto Recover"}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"#23 High Resin Bed Volume"},"Description":{"LocaleId":"en-US","Text":"Resin Bed is Larger than expected.\nIf this was a false resin bed detection \ndue to a low drain rate, correct the \nissue and press \"Resume\".\nIf this was a real resin be detection,\nPress \"Recover\"\n\nRecover no more than Once\n"}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"#24 Low Resin Bed Volume"},"Description":{"LocaleId":"en-US","Text":"Resin Bed is Smaller than expected.\nCheck Resin Concentrations in Contactor\nLow Resin Concentrations accelerate\nResin Loss!\n\nRecover No more than once"}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"#25 U/drain Drain Rate or Bed Expanded"},"Description":{"LocaleId":"en-US","Text":"Underdrain Drain Rate is insuffient\nand has lead to a \"Bed Detection\"\nCorrect Drain Rate issue and \"Resume\""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"LocaleId":"en-US","Text":"#26 Fresh Resin Drain Rate"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"LocaleId":"en-US","Text":"#27 Loaded Resin Fill Rate"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"LocaleId":"en-US","Text":"#28 Service Water Fill Rate"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"LocaleId":"en-US","Text":"#29 Reuse Brine Fill Rate"},"Description":{"LocaleId":"en-US","Text":"Ensure the following:\nValves are open,\nPump is Running, not airlocked"}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"LocaleId":"en-US","Text":"#30 Fresh Brine Fill Rate"},"Description":{"LocaleId":"en-US","Text":"Ensure the following:\nValves are open,\nPump is Running, not airlocked\nPump suction is not restricted"}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"#31 No Brine Breakthrough"},"Description":{"LocaleId":"en-US","Text":"Ensure the following:\nThere is salt in the saturator \nReuse Brine Strength is over 120mS/cm\nConductivity probe operation."}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"#32 Bed Detect in Drain Rinse to Waste"},"Description":{"LocaleId":"en-US","Text":"System has tried to rinse but \nstill detects too high of Salt content.\nVerify Conductivity probe operation."}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"#33 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"#34 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"#35 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"LocaleId":"en-US","Text":"#36 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"LocaleId":"en-US","Text":"#37 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"LocaleId":"en-US","Text":"#38 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"LocaleId":"en-US","Text":"#39 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"LocaleId":"en-US","Text":"#40 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"LocaleId":"en-US","Text":"#41 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"LocaleId":"en-US","Text":"#42 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"LocaleId":"en-US","Text":"#43 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"LocaleId":"en-US","Text":"#44 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"LocaleId":"en-US","Text":"#45 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"LocaleId":"en-US","Text":"#46 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"LocaleId":"en-US","Text":"#47 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"LocaleId":"en-US","Text":"#48 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"LocaleId":"en-US","Text":"#49 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"LocaleId":"en-US","Text":"#50 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"LocaleId":"en-US","Text":"#51 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"LocaleId":"en-US","Text":"#52 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"LocaleId":"en-US","Text":"#53 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"LocaleId":"en-US","Text":"#54 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"LocaleId":"en-US","Text":"#55 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"LocaleId":"en-US","Text":"#56 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"LocaleId":"en-US","Text":"#57 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"LocaleId":"en-US","Text":"#58 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"LocaleId":"en-US","Text":"#59 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"LocaleId":"en-US","Text":"#60 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"LocaleId":"en-US","Text":"#61 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"LocaleId":"en-US","Text":"#62 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"LocaleId":"en-US","Text":"#63 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"LocaleId":"en-US","Text":"#64 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"LocaleId":"en-US","Text":"#65 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"LocaleId":"en-US","Text":"#66 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"LocaleId":"en-US","Text":"#67 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"LocaleId":"en-US","Text":"#68 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"LocaleId":"en-US","Text":"#69 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"LocaleId":"en-US","Text":"#70 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"LocaleId":"en-US","Text":"#71 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"LocaleId":"en-US","Text":"#72 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"LocaleId":"en-US","Text":"#73 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"LocaleId":"en-US","Text":"#74 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"LocaleId":"en-US","Text":"#75 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"LocaleId":"en-US","Text":"#76 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"LocaleId":"en-US","Text":"#77 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"LocaleId":"en-US","Text":"#78 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"LocaleId":"en-US","Text":"#79 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"LocaleId":"en-US","Text":"#80 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"LocaleId":"en-US","Text":"#81 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"LocaleId":"en-US","Text":"#82 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"LocaleId":"en-US","Text":"#83 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"LocaleId":"en-US","Text":"#84 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"LocaleId":"en-US","Text":"#85 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"LocaleId":"en-US","Text":"#86 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"LocaleId":"en-US","Text":"#87 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"LocaleId":"en-US","Text":"#88 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"LocaleId":"en-US","Text":"#89 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"LocaleId":"en-US","Text":"#90 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"LocaleId":"en-US","Text":"#91 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"LocaleId":"en-US","Text":"#92 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"LocaleId":"en-US","Text":"#93 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"LocaleId":"en-US","Text":"#94 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"LocaleId":"en-US","Text":"#95 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"LocaleId":"en-US","Text":"#96 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"LocaleId":"en-US","Text":"#97 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"LocaleId":"en-US","Text":"#98 Paused -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Paused  -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_LR_Step_Numbers
+  Id: g=e1a4f58128ea0ee79aaf74846e239931
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_LR_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e1a4f58128ea0ee79aaf74846e239931",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step  0 - Wait for Water Treatment"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Off Time"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - On Time"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Tank Concentrated"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Transfer to Regen"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Reset"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 10 - Wait Airlift"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#99 Paused  -"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step  0 - Wait for Water Treatment"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Off Time"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - On Time"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Tank Concentrated"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Transfer to Regen"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Reset"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Wait Airlift"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Paused  -"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_WT_Step_Numbers
+  Id: g=c5d333b263a53297e8dbefab96250f15
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_WT_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c5d333b263a53297e8dbefab96250f15",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 0 - Wait For Enable"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Wait for Request"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - Resuspend Resin Bed"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Open Influent & Effluent Valves"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Recirculation & Treatment"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Water Treatment"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 6 - Close Influent & Effluent Valves"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 99 - Paused"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Wait For Enable"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Wait for Request"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Resuspend Resin Bed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Open Influent & Effluent Valves"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Recirculation & Treatment"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Water Treatment"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Close Influent & Effluent Valves"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_LR_Pause_Reasons
+  Id: g=f5031f43493c34c86fef921cf3cf44e6
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_LR_Pause_Reasons",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f5031f43493c34c86fef921cf3cf44e6",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Via Operator"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 Air Lift Pump Lockout"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 2
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Air Lift Pump Lockout"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Magna_Pak_WT_Pause_Reasons
+  Id: g=ebecdb991cf0a31cb9104667fe51f23d
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Magna_Pak_WT_Pause_Reasons",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ebecdb991cf0a31cb9104667fe51f23d",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Via Operator"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 System/Emergency Stop"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#3 System I/O Failure"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#4 Loss of System Power"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "System will Auto Resume when\nPower Failure Alarm has cleared"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#5 Power Quality"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "Call Electrictian to verify\nPower Quality Before Resuming "
+      }
+     },{
+      "Name": "Value5",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#6 System Air Pressure"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": "System will Auto Resume when \nSystem air pressure in normal."
+      }
+     },{
+      "Name": "Value6",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#7 Mixer/Circ. Pump Fault"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#8 Influent System Failure"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#9 Effluent System Failure"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#10 High Level Switch"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value10",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#11 High Flow Switch"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#12 COM Fail to Water Supply"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 System/Emergency Stop"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 System I/O Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Loss of System Power"},"Description":{"LocaleId":"en-US","Text":"System will Auto Resume when\nPower Failure Alarm has cleared"}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Power Quality"},"Description":{"LocaleId":"en-US","Text":"Call Electrictian to verify\nPower Quality Before Resuming "}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 System Air Pressure"},"Description":{"LocaleId":"en-US","Text":"System will Auto Resume when \nSystem air pressure in normal."}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Mixer/Circ. Pump Fault"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Influent System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Effluent System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 High Level Switch"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 High Flow Switch"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 COM Fail to Water Supply"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Interlock_Selection
+  Id: g=2cd853724c484c87e2e2b64b18a4873f
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Interlock_Selection",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2cd853724c484c87e2e2b64b18a4873f",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "HMI"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Relay"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Comm"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Modbus"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"HMI"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Relay"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Comm"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Modbus"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Auto_Sampler_Step_Numbers
+  Id: g=b71222d4b29e21c595f1b87db00a4cc2
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Auto_Sampler_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b71222d4b29e21c595f1b87db00a4cc2",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 0 - Valves in Auto"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Wait for Water Treatment"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - Drain Sink"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Delay Between Samples"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Drain Sink 2"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Flush Sample"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 6 - Fill Sample Cylinder"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 7 - Settle "
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 8 - Drain Sample Cylinder"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 9 - Purge Cylinder"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 10 - Drain Sink 3"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 11 - Empty Sample Cylinder"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 12 - Increment "
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 13 - Save Values"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 99 - Paused"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Valves in Auto"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Wait for Water Treatment"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Drain Sink"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Delay Between Samples"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Drain Sink 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Flush Sample"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Fill Sample Cylinder"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Settle "},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Drain Sample Cylinder"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Purge Cylinder"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Drain Sink 3"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Empty Sample Cylinder"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Increment "},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Save Values"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_Auto_Sampler_Pause_Reasons
+  Id: g=3b96070328cbbd4f87d0bf236b061ebb
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_Auto_Sampler_Pause_Reasons",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3b96070328cbbd4f87d0bf236b061ebb",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Paused - Via Operator"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 Paused - Emergency Stop Button Depressed"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#3 Paused - Max Fill Time"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#4 Paused - Max Drain Time"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#5 Paused - Cylinder level instrument"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#6 Paused - Sink Level Instrument"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#7 Paused - Sink High Level"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#8 Paused - Power Failure"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#9 Paused - IO Faliure"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10
+     },{
+      "Name": "Value11",
+      "Value": 11
+     },{
+      "Name": "Value12",
+      "Value": 12
+     },{
+      "Name": "Value13",
+      "Value": 13
+     },{
+      "Name": "Value14",
+      "Value": 14
+     },{
+      "Name": "Value15",
+      "Value": 15
+     },{
+      "Name": "Value16",
+      "Value": 16
+     },{
+      "Name": "Value17",
+      "Value": 17
+     },{
+      "Name": "Value18",
+      "Value": 18
+     },{
+      "Name": "Value19",
+      "Value": 19
+     },{
+      "Name": "Value20",
+      "Value": 20
+     },{
+      "Name": "Value21",
+      "Value": 21
+     },{
+      "Name": "Value22",
+      "Value": 22
+     },{
+      "Name": "Value23",
+      "Value": 23
+     },{
+      "Name": "Value24",
+      "Value": 24
+     },{
+      "Name": "Value25",
+      "Value": 25
+     },{
+      "Name": "Value26",
+      "Value": 26
+     },{
+      "Name": "Value27",
+      "Value": 27
+     },{
+      "Name": "Value28",
+      "Value": 28
+     },{
+      "Name": "Value29",
+      "Value": 29
+     },{
+      "Name": "Value30",
+      "Value": 30
+     },{
+      "Name": "Value31",
+      "Value": 31
+     },{
+      "Name": "Value32",
+      "Value": 32
+     },{
+      "Name": "Value33",
+      "Value": 33
+     },{
+      "Name": "Value34",
+      "Value": 34
+     },{
+      "Name": "Value35",
+      "Value": 35
+     },{
+      "Name": "Value36",
+      "Value": 36
+     },{
+      "Name": "Value37",
+      "Value": 37
+     },{
+      "Name": "Value38",
+      "Value": 38
+     },{
+      "Name": "Value39",
+      "Value": 39
+     },{
+      "Name": "Value40",
+      "Value": 40
+     },{
+      "Name": "Value41",
+      "Value": 41
+     },{
+      "Name": "Value42",
+      "Value": 42
+     },{
+      "Name": "Value43",
+      "Value": 43
+     },{
+      "Name": "Value44",
+      "Value": 44
+     },{
+      "Name": "Value45",
+      "Value": 45
+     },{
+      "Name": "Value46",
+      "Value": 46
+     },{
+      "Name": "Value47",
+      "Value": 47
+     },{
+      "Name": "Value48",
+      "Value": 48
+     },{
+      "Name": "Value49",
+      "Value": 49
+     },{
+      "Name": "Value50",
+      "Value": 50
+     },{
+      "Name": "Value51",
+      "Value": 51
+     },{
+      "Name": "Value52",
+      "Value": 52
+     },{
+      "Name": "Value53",
+      "Value": 53
+     },{
+      "Name": "Value54",
+      "Value": 54
+     },{
+      "Name": "Value55",
+      "Value": 55
+     },{
+      "Name": "Value56",
+      "Value": 56
+     },{
+      "Name": "Value57",
+      "Value": 57
+     },{
+      "Name": "Value58",
+      "Value": 58
+     },{
+      "Name": "Value59",
+      "Value": 59
+     },{
+      "Name": "Value60",
+      "Value": 60
+     },{
+      "Name": "Value61",
+      "Value": 61
+     },{
+      "Name": "Value62",
+      "Value": 62
+     },{
+      "Name": "Value63",
+      "Value": 63
+     },{
+      "Name": "Value64",
+      "Value": 64
+     },{
+      "Name": "Value65",
+      "Value": 65
+     },{
+      "Name": "Value66",
+      "Value": 66
+     },{
+      "Name": "Value67",
+      "Value": 67
+     },{
+      "Name": "Value68",
+      "Value": 68
+     },{
+      "Name": "Value69",
+      "Value": 69
+     },{
+      "Name": "Value70",
+      "Value": 70
+     },{
+      "Name": "Value71",
+      "Value": 71
+     },{
+      "Name": "Value72",
+      "Value": 72
+     },{
+      "Name": "Value73",
+      "Value": 73
+     },{
+      "Name": "Value74",
+      "Value": 74
+     },{
+      "Name": "Value75",
+      "Value": 75
+     },{
+      "Name": "Value76",
+      "Value": 76
+     },{
+      "Name": "Value77",
+      "Value": 77
+     },{
+      "Name": "Value78",
+      "Value": 78
+     },{
+      "Name": "Value79",
+      "Value": 79
+     },{
+      "Name": "Value80",
+      "Value": 80
+     },{
+      "Name": "Value81",
+      "Value": 81
+     },{
+      "Name": "Value82",
+      "Value": 82
+     },{
+      "Name": "Value83",
+      "Value": 83
+     },{
+      "Name": "Value84",
+      "Value": 84
+     },{
+      "Name": "Value85",
+      "Value": 85
+     },{
+      "Name": "Value86",
+      "Value": 86
+     },{
+      "Name": "Value87",
+      "Value": 87
+     },{
+      "Name": "Value88",
+      "Value": 88
+     },{
+      "Name": "Value89",
+      "Value": 89
+     },{
+      "Name": "Value90",
+      "Value": 90
+     },{
+      "Name": "Value91",
+      "Value": 91
+     },{
+      "Name": "Value92",
+      "Value": 92
+     },{
+      "Name": "Value93",
+      "Value": 93
+     },{
+      "Name": "Value94",
+      "Value": 94
+     },{
+      "Name": "Value95",
+      "Value": 95
+     },{
+      "Name": "Value96",
+      "Value": 96
+     },{
+      "Name": "Value97",
+      "Value": 97
+     },{
+      "Name": "Value98",
+      "Value": 98
+     },{
+      "Name": "Value99",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#99 Via Operator"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Paused - Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Paused - Emergency Stop Button Depressed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 Paused - Max Fill Time"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Paused - Max Drain Time"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Paused - Cylinder level instrument"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 Paused - Sink Level Instrument"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Paused - Sink High Level"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Paused - Power Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Paused - IO Faliure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_RHQ_Step_Numbers
+  Id: g=6bbc35f18ed99a2542767614c54eb118
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_RHQ_Step_Numbers",
+    "DataType": {
+     "IdType": 2,
+     "Id": "6bbc35f18ed99a2542767614c54eb118",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 0 - Devices in Auto"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 1 - Start Return Pump"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 2 - Start Sample Pump"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 3 - Read Instrument"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 4 - Decide Dose"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 5 - Calculate Dose"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 6 - Pre Rinse"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 7 - Acquire Chlorine"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 8 - Dose Chlorine"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 9 - Wait Chlorine"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 10 - Read Chlorine"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 11 - Detect Crossover"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 12 - Acquire NHCL2"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 13 - Add Ammonia"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 14 - Wait Ammonia"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 15 - Add Chlorine"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 16 - Wait Chlorine 2"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 17 - Measure NHCL2"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 18 - Detect Residual"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 19 - Post Rinse"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 20 - Cycle Complete"
+      }
+     },{
+      "Name": "Value21",
+      "Value": 21,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 21 - Fill Column (Cl)"
+      }
+     },{
+      "Name": "Value22",
+      "Value": 22,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 22 - Pre Rinse (Cl)"
+      }
+     },{
+      "Name": "Value23",
+      "Value": 23,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 23 - Calibration Dose (Cl)"
+      }
+     },{
+      "Name": "Value24",
+      "Value": 24,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 24 - Calibration Wait (Cl)"
+      }
+     },{
+      "Name": "Value25",
+      "Value": 25,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 25 - Post Rinse (CL)"
+      }
+     },{
+      "Name": "Value26",
+      "Value": 31,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 31 - Fill Column (NH3)"
+      }
+     },{
+      "Name": "Value27",
+      "Value": 32,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 32 - Pre Rinse (NH3)"
+      }
+     },{
+      "Name": "Value28",
+      "Value": 33,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 33 - Calibration Dose (NH3)"
+      }
+     },{
+      "Name": "Value29",
+      "Value": 34,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 34 - Calibration Wait (NH3)"
+      }
+     },{
+      "Name": "Value30",
+      "Value": 35,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 35 - Post Rinse (NH3)"
+      }
+     },{
+      "Name": "Value31",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Step 99 - Paused"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"Step 0 - Devices in Auto"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Step 1 - Start Return Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Step 2 - Start Sample Pump"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Step 3 - Read Instrument"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Step 4 - Decide Dose"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Step 5 - Calculate Dose"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Step 6 - Pre Rinse"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Step 7 - Acquire Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"Step 8 - Dose Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"Step 9 - Wait Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"Step 10 - Read Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"Step 11 - Detect Crossover"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"Step 12 - Acquire NHCL2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"Step 13 - Add Ammonia"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"Step 14 - Wait Ammonia"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"Step 15 - Add Chlorine"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"Step 16 - Wait Chlorine 2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"Step 17 - Measure NHCL2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"Step 18 - Detect Residual"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"Step 19 - Post Rinse"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"Step 20 - Cycle Complete"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"LocaleId":"en-US","Text":"Step 21 - Fill Column (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"LocaleId":"en-US","Text":"Step 22 - Pre Rinse (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"LocaleId":"en-US","Text":"Step 23 - Calibration Dose (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"LocaleId":"en-US","Text":"Step 24 - Calibration Wait (Cl)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"LocaleId":"en-US","Text":"Step 25 - Post Rinse (CL)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"LocaleId":"en-US","Text":"Step 31 - Fill Column (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"LocaleId":"en-US","Text":"Step 32 - Pre Rinse (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"LocaleId":"en-US","Text":"Step 33 - Calibration Dose (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"LocaleId":"en-US","Text":"Step 34 - Calibration Wait (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"LocaleId":"en-US","Text":"Step 35 - Post Rinse (NH3)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"Step 99 - Paused"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Enum_RHQ_Pause_Reasons
+  Id: g=4ca70717ba7895cb3d41e9bb83fefce0
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Enum_MM_Pause_Reasons1",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4ca70717ba7895cb3d41e9bb83fefce0",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#1 Paused - Via Operator"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#2 Paused - Emergency Stop Button Depressed"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#3 Paused - Valve Failure"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#4 Paused - Power Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#5 Paused - IO Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#6 Paused - Raw Water Flow Transmitter"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#7 Paused - Waste Flow Transmitter"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#8 Paused - Waste Flow Conductivity"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#9 Paused - Brine System Failure"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#10 Paused - Service Water System Failure"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#11 Paused - Regen Permissive (Auto Resume)"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#12 Paused - Max Regen Time Exceeded"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#13 Paused - Feed System Low Level NA"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#14 Paused - Low Brine Tank Level (Auto Resume)"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#15 Paused - Comm Failure (Auto Resume)"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#16 Paused - Low Battery (Auto Resume)"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#17 Paused - Low Brine Drain Rate (Auto Resume)"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18
+     },{
+      "Name": "Value19",
+      "Value": 19
+     },{
+      "Name": "Value20",
+      "Value": 20
+     },{
+      "Name": "Value21",
+      "Value": 21
+     },{
+      "Name": "Value22",
+      "Value": 22
+     },{
+      "Name": "Value23",
+      "Value": 23
+     },{
+      "Name": "Value24",
+      "Value": 24
+     },{
+      "Name": "Value25",
+      "Value": 25
+     },{
+      "Name": "Value26",
+      "Value": 26
+     },{
+      "Name": "Value27",
+      "Value": 27
+     },{
+      "Name": "Value28",
+      "Value": 28
+     },{
+      "Name": "Value29",
+      "Value": 29
+     },{
+      "Name": "Value30",
+      "Value": 30
+     },{
+      "Name": "Value31",
+      "Value": 31
+     },{
+      "Name": "Value32",
+      "Value": 32
+     },{
+      "Name": "Value33",
+      "Value": 33
+     },{
+      "Name": "Value34",
+      "Value": 34
+     },{
+      "Name": "Value35",
+      "Value": 35
+     },{
+      "Name": "Value36",
+      "Value": 36
+     },{
+      "Name": "Value37",
+      "Value": 37
+     },{
+      "Name": "Value38",
+      "Value": 38
+     },{
+      "Name": "Value39",
+      "Value": 39
+     },{
+      "Name": "Value40",
+      "Value": 40
+     },{
+      "Name": "Value41",
+      "Value": 41
+     },{
+      "Name": "Value42",
+      "Value": 42
+     },{
+      "Name": "Value43",
+      "Value": 43
+     },{
+      "Name": "Value44",
+      "Value": 44
+     },{
+      "Name": "Value45",
+      "Value": 45
+     },{
+      "Name": "Value46",
+      "Value": 46
+     },{
+      "Name": "Value47",
+      "Value": 47
+     },{
+      "Name": "Value48",
+      "Value": 48
+     },{
+      "Name": "Value49",
+      "Value": 49
+     },{
+      "Name": "Value50",
+      "Value": 50
+     },{
+      "Name": "Value51",
+      "Value": 51
+     },{
+      "Name": "Value52",
+      "Value": 52
+     },{
+      "Name": "Value53",
+      "Value": 53
+     },{
+      "Name": "Value54",
+      "Value": 54
+     },{
+      "Name": "Value55",
+      "Value": 55
+     },{
+      "Name": "Value56",
+      "Value": 56
+     },{
+      "Name": "Value57",
+      "Value": 57
+     },{
+      "Name": "Value58",
+      "Value": 58
+     },{
+      "Name": "Value59",
+      "Value": 59
+     },{
+      "Name": "Value60",
+      "Value": 60
+     },{
+      "Name": "Value61",
+      "Value": 61
+     },{
+      "Name": "Value62",
+      "Value": 62
+     },{
+      "Name": "Value63",
+      "Value": 63
+     },{
+      "Name": "Value64",
+      "Value": 64
+     },{
+      "Name": "Value65",
+      "Value": 65
+     },{
+      "Name": "Value66",
+      "Value": 66
+     },{
+      "Name": "Value67",
+      "Value": 67
+     },{
+      "Name": "Value68",
+      "Value": 68
+     },{
+      "Name": "Value69",
+      "Value": 69
+     },{
+      "Name": "Value70",
+      "Value": 70
+     },{
+      "Name": "Value71",
+      "Value": 71
+     },{
+      "Name": "Value72",
+      "Value": 72
+     },{
+      "Name": "Value73",
+      "Value": 73
+     },{
+      "Name": "Value74",
+      "Value": 74
+     },{
+      "Name": "Value75",
+      "Value": 75
+     },{
+      "Name": "Value76",
+      "Value": 76
+     },{
+      "Name": "Value77",
+      "Value": 77
+     },{
+      "Name": "Value78",
+      "Value": 78
+     },{
+      "Name": "Value79",
+      "Value": 79
+     },{
+      "Name": "Value80",
+      "Value": 80
+     },{
+      "Name": "Value81",
+      "Value": 81
+     },{
+      "Name": "Value82",
+      "Value": 82
+     },{
+      "Name": "Value83",
+      "Value": 83
+     },{
+      "Name": "Value84",
+      "Value": 84
+     },{
+      "Name": "Value85",
+      "Value": 85
+     },{
+      "Name": "Value86",
+      "Value": 86
+     },{
+      "Name": "Value87",
+      "Value": 87
+     },{
+      "Name": "Value88",
+      "Value": 88
+     },{
+      "Name": "Value89",
+      "Value": 89
+     },{
+      "Name": "Value90",
+      "Value": 90
+     },{
+      "Name": "Value91",
+      "Value": 91
+     },{
+      "Name": "Value92",
+      "Value": 92
+     },{
+      "Name": "Value93",
+      "Value": 93
+     },{
+      "Name": "Value94",
+      "Value": 94
+     },{
+      "Name": "Value95",
+      "Value": 95
+     },{
+      "Name": "Value96",
+      "Value": 96
+     },{
+      "Name": "Value97",
+      "Value": 97
+     },{
+      "Name": "Value98",
+      "Value": 98
+     },{
+      "Name": "Value99",
+      "Value": 99,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "#99 Via Operator"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"#1 Paused - Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"#2 Paused - Emergency Stop Button Depressed"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"#3 Paused - Valve Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"#4 Paused - Power Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"#5 Paused - IO Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"#6 Paused - Raw Water Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"#7 Paused - Waste Flow Transmitter"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"#8 Paused - Waste Flow Conductivity"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"#9 Paused - Brine System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"#10 Paused - Service Water System Failure"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"#11 Paused - Regen Permissive (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"#12 Paused - Max Regen Time Exceeded"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"#13 Paused - Feed System Low Level NA"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"#14 Paused - Low Brine Tank Level (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"#15 Paused - Comm Failure (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"#16 Paused - Low Battery (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"#17 Paused - Low Brine Drain Rate (Auto Resume)"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":21,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":22,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":23,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":24,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":25,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":26,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":27,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":28,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":29,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":30,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":31,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":32,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":33,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":34,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":35,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":36,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":37,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":38,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":39,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":40,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":41,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":42,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":43,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":44,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":45,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":46,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":47,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":48,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":49,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":50,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":51,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":52,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":53,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":54,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":55,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":56,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":57,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":58,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":59,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":60,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":61,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":62,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":63,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":64,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":65,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":66,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":67,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":68,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":69,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":70,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":71,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":72,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":73,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":74,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":75,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":76,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":77,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":78,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":79,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":80,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":81,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":82,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":83,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":84,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":85,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":86,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":87,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":88,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":89,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":90,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":91,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":92,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":93,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":94,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":95,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":96,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":97,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":98,"DisplayName":{"NamespaceIndex":-1,"LocaleId":"","Text":""},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":99,"DisplayName":{"LocaleId":"en-US","Text":"#99 Via Operator"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Class: DataType
+  Name: Week_Days
+  Id: g=bbe49eacd92f96b96f37593067e1d466
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "Week_Days",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bbe49eacd92f96b96f37593067e1d466",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Sunday"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Monday"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Tuesday"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Wednesday"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Thursday"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value5",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Friday"
+      },
+      "Description": {
+       "LocaleId": "en-US",
+       "Text": ""
+      }
+     },{
+      "Name": "Value6",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "Saturday"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"Sunday"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"Monday"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"Tuesday"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"Wednesday"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"Thursday"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"Friday"},"Description":{"LocaleId":"en-US","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"Saturday"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]

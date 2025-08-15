@@ -1,0 +1,43 @@
+Name: Belden
+Type: FolderType
+Children:
+- Name: 1036A
+  Id: g=bd0870c1f4d0872c060a2c445a3b651a
+  Type: Part_Info
+  Children:
+  - Name: Make
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Belden"
+  - Name: Model
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1036A"
+  - Name: Part_Number
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1036A"
+  - Name: Image_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/1036A.png"
+  - Name: PDF_File
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=36;%PROJECTDIR%/IXOM/1036A.pdf"
+  - Name: Website
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "https://catalog.belden.com/techdata/EN/1036A_techdata.pdf"
+  - Name: Description_Line_1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1Triad, 18AWG, Shielded, PVC"
+  - Name: Description_Line_2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Red, Black, White, Shield"
+  - Name: Description_Line_3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "300V Rated, \t0.24 in OD"

@@ -1,0 +1,76 @@
+Name: Model
+Type: FolderType
+Children:
+- Name: PLC_Name
+  Id: g=55d4dcc7bf8e6e5415483f69f864fc68
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "AB_MagnaPak"
+- Name: PLC_Name_Test
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "AB_MIEX_Mini"
+- Name: Rewind
+  Type: BaseObjectType
+  Children:
+  - Name: Enable
+    Id: g=e2cd21faabc83aa6edc2b68a34d8f2bc
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: UTC_DateTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Local_DateTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Local_DateTimeChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../UTC_DateTime"
+- Name: Screen
+  Type: BaseObjectType
+  Children:
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Height
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Header_Height
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Footer_Height
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Main_Height
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: Test_1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Test_2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Header_Name
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Footer_Name
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Main_Name
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: URL
+  Id: g=32006eb207f1d5dfb337df383d62f426
+  Type: BaseDataVariableType
+  DataType: String
+- Name: PDF
+  Id: g=ac2c8818f003be73eb1bc60a58b3e83a
+  Type: BaseDataVariableType
+  DataType: ResourceUri

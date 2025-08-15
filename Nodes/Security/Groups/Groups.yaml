@@ -1,0 +1,34 @@
+Name: Groups
+Id: g=33ac98afcbbcd645bc8146197074cc43
+Type: GroupsCategoryFolder
+Children:
+- Name: Administrators
+  Id: g=495af53d42717b4e8d2b931f85ebf36d
+  Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=790584a5eee769307bb32f265faa9ae4
+  - Class: Reference
+    Type: HasRole
+    Target: g=b4bbe42bb3e0ff72b585e9aa122355c9
+  - Class: Reference
+    Type: HasRole
+    Target: g=aee1a1c88189e8ca7c01be1cd256adf8
+- Name: Supervisors
+  Id: g=f4277f85639ddc01ab8f306487d95fba
+  Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=790584a5eee769307bb32f265faa9ae4
+  - Class: Reference
+    Type: HasRole
+    Target: g=aee1a1c88189e8ca7c01be1cd256adf8
+- Name: Operators
+  Id: g=b93dceed3051bfed8e8b721c0a020a93
+  Type: GroupType
+  Children:
+  - Class: Reference
+    Type: HasRole
+    Target: g=aee1a1c88189e8ca7c01be1cd256adf8

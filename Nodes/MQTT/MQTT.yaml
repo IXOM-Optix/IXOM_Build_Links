@@ -1,0 +1,370 @@
+Name: MQTT
+Type: MQTTCategoryFolder
+Children:
+- Name: MQTTLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: StartListeningToVariables
+  - Name: MqttServer
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: IPAddress
+      Type: BaseDataVariableType
+      DataType: String
+    - Name: Port
+      Type: BaseDataVariableType
+      DataType: UInt16
+    - Name: UseSSL
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Certificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: CertificatePassword
+        Type: BaseDataVariableType
+        DataType: Password
+    - Name: AutoStart
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: UserAuthentication
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: AuthorizedUsers
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+    - Name: IsRunning
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: IsDebuggingMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: MaxNumberOfConnections
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: NumberOfConnections
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: MqttClient
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: IPAddress
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "127.0.0.1"
+    - Name: Port
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 1883
+    - Name: UseSSL
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: CaCertificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: ClientCertificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+      - Name: ClientCertificatePassword
+        Type: BaseDataVariableType
+        DataType: Password
+      - Name: AllowUntrustedCertificates
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: UserAuthentication
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: AuthorizedUsers
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+    - Name: IsRunning
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: IsDebuggingMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: ClientId
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "IXOMRemoteClient"
+    - Name: Connected
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: SentPackages
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: ReceivedPackages
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Class: Method
+    Name: StartMQTTServer
+  - Name: Subscriber
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Children:
+    - Name: LiveTags
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: LiveTagsFolder
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: NodeClass
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+      - Name: LiveTagsTopic
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: LastPackageTimestamp
+        Type: BaseDataVariableType
+        DataType: DateTime
+    - Name: StoreTables
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: Store
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
+      - Name: StoreTablesTopic
+        Type: BaseDataVariableType
+        DataType: String
+    - Name: CustomPayload
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: CustomPayloadMessage
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Type: BaseDataVariableType
+        DataType: String
+  - Name: Publisher
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: LiveTags
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: LiveTagsPeriod
+        Type: BaseDataVariableType
+        DataType: Duration
+      - Name: LiveTagsFolder
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: NodeClass
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+      - Name: LiveTagsTopic
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+    - Name: StoreTables
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: Store
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/IXOM_Build_Links/DataStores/EmbeddedDatabase1"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
+      - Name: TableNames
+        Type: BaseDataVariableType
+        DataType: Int32
+        Children:
+        - Name: Table1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Monthly"
+      - Name: PreserveData
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: MaximumItemsPerPacket
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 100
+      - Name: MaximumPublishTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:20:00.0000000"
+      - Name: MinimumPublishTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:05.0000000"
+      - Name: StoreTablesTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "MonthlyTable"
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 2
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: TablesPrefix
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: AllRows
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: CustomPayload
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: CustomPayloadMessage
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Type: BaseDataVariableType
+        DataType: String
+      - Name: CustomPayloadPeriod
+        Type: BaseDataVariableType
+        DataType: Duration
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+  - Class: Method
+    Name: FetchData
+  - Class: Method
+    Name: StartCustomPayload
+  - Name: ns=23;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 23
+      },
+      "Body": {
+       "libraryGuid": "344ce03e2d066cc161c115315e1e9370",
+       "objectGuid": "8b72e46a8109906c789b05dee45baf97",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+- Name: MQTTClient1
+  Type: MQTTClient
+  Children:
+  - Name: BrokerAddress
+    Type: PropertyType
+    DataType: String
+    Value: "96.69.165.218"
+  - Name: BrokerPort
+    Type: PropertyType
+    DataType: UInt16
+    Value: 8883
+  - Name: ClientId
+    Type: PropertyType
+    DataType: String
+    Value: "FTOptix-1"
+  - Name: Status
+    Type: BaseDataVariableType
+    DataType: StatusEnum
+    ReferenceType: HasProperty
+    AccessLevel: Read
+  - Name: UserIdentityType
+    Type: BaseDataVariableType
+    DataType: ns=21;UserIdentityTypeEnum
+  - Name: SSLTLSEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ValidateBrokerCertificate
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Class: Reference
+    Target: ns=21;i=12
+    Direction: Forward
+  - Class: Reference
+    Target: ns=21;i=44
+    Direction: Forward
+  - Name: MQTTPublisher_Monthly
+    Type: MQTTPublisher
+    Children:
+    - Name: SamplingMode
+      Type: PropertyType
+      DataType: ns=21;SamplingModeEnum
+    - Name: Folder
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/IXOM_Build_Links/Model/Monthly_Data"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Build_Links/Model/Monthly_Data/Time_Stamp"
+    - Name: Topic
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "MonthlyTestTopic"
+    - Name: QoS
+      Type: BaseDataVariableType
+      DataType: QoSLevelEnum
+      Value: 2
+    - Name: Retain
+      Type: BaseDataVariableType
+      DataType: Boolean
+    - Name: PFEnabled
+      Type: PropertyType
+      DataType: Boolean
+    - Name: PayloadUpdateTimestamp
+      Type: BaseDataVariableType
+      DataType: DateTime
+      ReferenceType: HasProperty
+      AccessLevel: Read
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Objects/IXOM_Build_Links/Model/Monthly_Data/Time_Stamp"

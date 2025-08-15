@@ -1,0 +1,19 @@
+Name: Buttons
+Type: FolderType
+Children:
+- Name: OnText
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#000000"
+- Name: OffText
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#646464"
+- Name: OnBackground
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#969696"
+- Name: OffBackground
+  Type: BaseDataVariableType
+  DataType: Color
+  Value: "#c8c8c8"

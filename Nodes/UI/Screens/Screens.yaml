@@ -1,0 +1,8 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- File: Headers/Headers.yaml
+- File: Footers/Footers.yaml
+- File: Main/Main.yaml
+- File: Full_Screen/Full_Screen.yaml
+- File: Forms/Forms.yaml
