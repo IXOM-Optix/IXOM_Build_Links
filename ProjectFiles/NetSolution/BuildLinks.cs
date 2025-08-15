@@ -906,7 +906,39 @@ public class BuildLinks : BaseNetLogic
     }
     private void AB_VFD_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
+        string almDesc = Obj.BrowseName;
+        string area = Obj.Owner.Owner.BrowseName;
+        string device_name = Obj.Owner.BrowseName;
+        string device_description = Obj.Owner.GetVariable("VFD/Device_Description").Value;
 
+        switch (Obj.BrowseName)
+        {
+            case "Comm_Fault":
+                almDesc = "Comm Fail";
+                break;
+            case "External_Fault":
+                almDesc = "External Fault";
+                break;
+            case "FT_Start":
+                almDesc = "Fail to Start";
+                break;
+            case "FT_Stop":
+                almDesc = "Fail to Stop";
+                break;
+            case "Low_Current":
+                almDesc = "Low Current";
+                break;
+            case "High_Current":
+                almDesc = "Low Current";
+                break;
+            case "Drive_Fault":
+                almDesc = "Drive Fault";
+                break;
+            default:
+                break;
+        }
+        //Obj.GetVariable("Message").ResetDynamicLink();
+        //Obj.GetVariable("Message").Value = $"{device_name} {almDesc} - {area} {device_description}";
     }
 
     /*************************************************************************************************************
@@ -924,10 +956,10 @@ public class BuildLinks : BaseNetLogic
                     AB_SEQ_UDT(chld, Station);
                     break;
                 case "OffNormalAlarmController":
-                    AB_VFD_Alarm(chld, Station);
+                    AB_SEQ_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_VFD_CIV_Logger(chld, Station);
+                    AB_SEQ_CIV_Logger(chld, Station);
                     break;
                 default:
                     break;
@@ -1058,6 +1090,33 @@ public class BuildLinks : BaseNetLogic
     private void AB_SEQ_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
 
+        string almDesc = Obj.BrowseName;
+        string area = Obj.Owner.Owner.BrowseName;
+        string device_name = Obj.Owner.BrowseName;
+        string device_description = Obj.Owner.GetVariable("SEQ/Device_Description").Value;
+
+
+        switch (Obj.BrowseName)
+        {
+            case "SEQ_Paused":
+                almDesc = "Sequencer Paused";
+                break;
+            case "SEQ_No_Auto_Start":
+                almDesc = "Sequencer in Manual Start Mode";
+                break;
+            case "SEQ_No_Auto_Advance":
+                almDesc = "Sequencer in Manual Advance Mode";
+                break;
+            case "SEQ_Recovery_Active":
+                almDesc = "Recovery Sequence Active";
+                break;
+            default:
+                break;
+        }
+        Obj.GetVariable("Message").ResetDynamicLink();
+        Obj.GetVariable("Message").Value = $"{device_name} {almDesc}";
+
+        
     }
 
 

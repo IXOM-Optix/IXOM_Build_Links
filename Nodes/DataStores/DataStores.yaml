@@ -1394,6 +1394,54 @@ Children:
         - Name: Paused_Time
           Type: StoreColumn
           DataType: Float
+    - Name: PF_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
+    - Name: LB_0001_CIV
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: STS
+          Type: StoreColumn
+          DataType: Int16
     - Name: ESTOP_0001_CIV
       Type: SQLiteStoreTable
       Children:
@@ -1607,54 +1655,6 @@ Children:
         - Name: LocalTimestamp
           Type: StoreColumn
           DataType: DateTime
-        - Name: STS
-          Type: StoreColumn
-          DataType: Int16
-    - Name: PF_0001_CIV
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=13;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-        - Name: STS
-          Type: StoreColumn
-          DataType: Int16
-    - Name: LB_0001_CIV
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=13;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=13;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
         - Name: STS
           Type: StoreColumn
           DataType: Int16
