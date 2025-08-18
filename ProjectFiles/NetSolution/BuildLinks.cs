@@ -21,6 +21,7 @@ using FTOptix.UI;
 using FTOptix.OPCUAClient;
 using FTOptix.Core;
 using System.Linq.Expressions;
+using MQTTnet.Internal;
 #endregion
 
 public class BuildLinks : BaseNetLogic
@@ -117,6 +118,9 @@ public class BuildLinks : BaseNetLogic
                                 case "Bools_object":
                                     AB_Bools_Object(item, Station);
                                     break;
+                                case "ACC_UDT":
+                                    AB_ACC_Object(item, Station);
+                                    break;
                                 default:
                                     break;
                             }
@@ -128,12 +132,177 @@ public class BuildLinks : BaseNetLogic
         Log.Info($"Rockwell {Obj.BrowseName} {Station.BrowseName}");
     }
 
-/*************************************************************************************************************
-**************************************** Allen Bradley   PLC  ************************************************
-**************************************************************************************************************/
+
+    private void Build_S7TiaProfinetStation(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
+    {
+
+        foreach (IUAObject chld in Obj.Children)
+        {
+            switch (chld.ObjectType.BrowseName)
+            {
+                case "PLC_UDT":
+                    SIE_PLC(chld, Station);
+                    break;
+                case "BaseObjectType":
+                    if (chld.BrowseName == "Config")
+                    {
+                        SIE_Config(chld, Station);
+                    }
+                    else
+                    {
+                        foreach (IUAObject item in chld.Children)
+                        {
+                            switch (item.ObjectType.BrowseName)
+                            {
+                                case "ALZ_object":
+                                    SIE_ALZ_Object(item, Station);
+                                    break;
+                                case "LVL_object":
+                                    SIE_LVL_Object(item, Station);
+                                    break;
+                                case "DIG_object":
+                                    SIE_DIG_Object(item, Station);
+                                    break;
+                                case "VLV_object":
+                                    SIE_VLV_Object(item, Station);
+                                    break;
+                                case "MTR_object":
+                                    SIE_MTR_Object(item, Station);
+                                    break;
+                                case "VFD_object":
+                                    SIE_VFD_Object(item, Station);
+                                    break;
+                                case "SEQ_object":
+                                    SIE_SEQ_Object(item, Station);
+                                    break;
+                                case "PID_object":
+                                    SIE_PID_Object(item, Station);
+                                    break;
+                                case "Setpoints_UDT":
+                                    SIE_Setpoints_Object(item, Station);
+                                    break;
+                                case "CV_UDT":
+                                    SIE_CV_Object(item, Station);
+                                    break;
+                                case "Bools_object":
+                                    SIE_Bools_Object(item, Station);
+                                    break;
+                                default:
+                                    break;
+                            }
+                        }
+                    }
+                    break;
+            }
+        }
+
+        Log.Info($"Siemens {Obj.BrowseName} {Station.BrowseName}");
+    }
+
+
+private void DataLogger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+    {
+        switch (Obj.BrowseName)
+        {
+            case "ALZ_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "LVL_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "VLV_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "MTR_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "VFD_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "SEQ_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+            case "PID_PD_Logger":
+                PD_Logger(Obj, Station);
+                break;
+
+
+            case "ALZ_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "LVL_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "DIG_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "VLV_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "MTR_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "VFD_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+            case "SEQ_CIV_Logger":
+                CIV_Logger(Obj, Station);
+                break;
+
+
+            case "Bool_CIV_Logger":
+                Bool_Logger(Obj, Station);
+                break;
+
+            default:
+                break;
+        }
+    }
+    private void PD_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+    {
+        //Log.Info($"PD_LOGGER - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
+        Obj.GetVariable("TableName").ResetDynamicLink();
+        Obj.GetVariable("TableName").Value = Obj.Owner.BrowseName;
+
+        Obj.GetVariable("Store").ResetDynamicLink();
+        Obj.GetVariable("Store").SetDynamicLink(Project.Current.GetVariable("DataStores/" + Obj.Owner.Owner.Owner.BrowseName + "/Filename"), DynamicLinkMode.ReadWrite);
+        string tmp1 = Obj.GetVariable("Store").GetVariable("DynamicLink").Value;
+    
+        Obj.GetVariable("Store").GetVariable("DynamicLink").Value = tmp1.Replace("/Filename", "@NodeId");
+    }
+     private void CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+    {
+        //Log.Info($"CIV_LOGGER - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
+        Obj.GetVariable("TableName").ResetDynamicLink();
+        Obj.GetVariable("TableName").Value = Obj.Owner.BrowseName + "_CIV";
+
+        Obj.GetVariable("Store").ResetDynamicLink();
+        Obj.GetVariable("Store").SetDynamicLink(Project.Current.GetVariable("DataStores/" + Obj.Owner.Owner.Owner.BrowseName + "/Filename"), DynamicLinkMode.ReadWrite);
+        string tmp2 = Obj.GetVariable("Store").GetVariable("DynamicLink").Value;
+        Obj.GetVariable("Store").GetVariable("DynamicLink").Value = tmp2.Replace("/Filename", "@NodeId");              
+    }
+
+     private void Bool_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+    {
+        //Log.Info($"CIV_LOGGER - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
+        Obj.GetVariable("TableName").ResetDynamicLink();
+        Obj.GetVariable("TableName").Value = "Bools_" + Obj.Owner.BrowseName;
+
+        Obj.GetVariable("Store").ResetDynamicLink();
+        Obj.GetVariable("Store").SetDynamicLink(Project.Current.GetVariable("DataStores/" + Obj.Owner.Owner.Owner.BrowseName + "/Filename"), DynamicLinkMode.ReadWrite);
+        string tmp2 = Obj.GetVariable("Store").GetVariable("DynamicLink").Value;
+        Obj.GetVariable("Store").GetVariable("DynamicLink").Value = tmp2.Replace("/Filename", "@NodeId");              
+    }
+
+
+
+
+    /*************************************************************************************************************
+    **************************************** Allen Bradley   PLC  ************************************************
+    **************************************************************************************************************/
     private void AB_PLC(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
-        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
         Obj.GetVariable("PLC").ResetDynamicLink();
         Obj.GetVariable("PLC").Value = Obj.Owner.BrowseName;
 
@@ -146,7 +315,6 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Info/Model").ResetDynamicLink();
         Obj.GetVariable("Info/Model").SetDynamicLink(Station.GetVariable("StationStatusVariables/CatalogNumber"), DynamicLinkMode.ReadWrite);
 
-
         //String Formatter
         Obj.GetVariable("Info/Firmware").ResetDynamicLink();
         var stringFormatter1 = InformationModel.Make<StringFormatter>("StringFormatter1");
@@ -158,8 +326,6 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Info/Firmware").SetConverter(stringFormatter1);
         source0.SetDynamicLink(Station.GetVariable("StationStatusVariables/MajorRev"), DynamicLinkMode.Read);
         source1.SetDynamicLink(Station.GetVariable("StationStatusVariables/MinorRev"), DynamicLinkMode.Read);
-
-
 
         //Expression Evaluator
         Obj.GetVariable("Fault").ResetDynamicLink();
@@ -245,9 +411,9 @@ public class BuildLinks : BaseNetLogic
 
     }
 
-/*************************************************************************************************************
-****************************************        AB Config     ************************************************
-**************************************************************************************************************/
+    /*************************************************************************************************************
+    ****************************************        AB Config     ************************************************
+    **************************************************************************************************************/
     private void AB_Config(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
         Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
@@ -298,7 +464,7 @@ public class BuildLinks : BaseNetLogic
                     AB_ALZ_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_ALZ_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -371,20 +537,50 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Value").SetDynamicLink(deviceTag.GetVariable("Value"), DynamicLinkMode.ReadWrite);
 
         Obj.GetVariable("Units").ResetDynamicLink();
-        Obj.GetVariable("Units").SetDynamicLink(deviceTag.GetVariable("Units"), DynamicLinkMode.ReadWrite);
-        
-
+        Obj.GetVariable("Units").SetDynamicLink(deviceTag.GetVariable("Units"), DynamicLinkMode.ReadWrite);        
      }
 
-    private void AB_ALZ_CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+     private void AB_ALZ_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
+        string almDesc = Obj.BrowseName;
+        string area = Obj.Owner.Owner.BrowseName;
+        string device_name = Obj.Owner.BrowseName;
+        string device_description = Obj.Owner.GetVariable("ALZ/Device_Description").Value;
 
-
+        switch (Obj.BrowseName)
+        {
+            case "Comm_Fail":
+                almDesc = "Comm Fail";
+                break;
+            case "Out_of_Range":
+                almDesc = "Out of Range";
+                break;
+            case "Low_Alarm":
+                almDesc = "Low Alarm";
+                break;
+            case "Low_Warning":
+                almDesc = "Low Warning";
+                break;
+            case "High_Warning":
+                almDesc = "High Warning";
+                break;
+            case "High_Alarm":
+                almDesc = "High Alarm";
+                break;
+            default:
+                break;
+        }
+        Obj.GetVariable("Message").ResetDynamicLink();
+        Obj.GetVariable("Message").Value = $"{device_name} {almDesc} - {area} {device_description}";
     }
-    private void AB_ALZ_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
-    {
 
-    }
+    
+
+
+
+
+    
+    
 
 
 
@@ -406,7 +602,7 @@ public class BuildLinks : BaseNetLogic
                     AB_LVL_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_LVL_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -496,14 +692,39 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Percent_of_Range_at_100").SetDynamicLink(deviceTag.GetVariable("Percent_of_Range_at_100"), DynamicLinkMode.ReadWrite);
     }
 
-    private void AB_LVL_CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
-    {
 
-
-    }
     private void AB_LVL_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
+        string almDesc = Obj.BrowseName;
+        string area = Obj.Owner.Owner.BrowseName;
+        string device_name = Obj.Owner.BrowseName;
+        string device_description = Obj.Owner.GetVariable("LVL/Device_Description").Value;
 
+        switch (Obj.BrowseName)
+            {
+                case "Comm_Fail":
+                    almDesc = "Comm Fail";
+                    break;
+                case "Out_of_Range":
+                    almDesc = "Out of Range";
+                    break;
+                case "Low_Alarm":
+                    almDesc = "Low Level Alarm";
+                    break;
+                case "Low_Warning":
+                    almDesc = "Low Level Warning";
+                    break;
+                case "High_Warning":
+                    almDesc = "High Level Warning";
+                    break;
+                case "High_Alarm":
+                    almDesc = "High Level Alarm";
+                    break;
+                default:
+                    break;
+            }
+        Obj.GetVariable("Message").ResetDynamicLink();
+        Obj.GetVariable("Message").Value = $"{device_name} {almDesc} - {area} {device_description}";
     }
 
 
@@ -525,7 +746,7 @@ public class BuildLinks : BaseNetLogic
                     AB_DIG_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_DIG_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -568,17 +789,7 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Input_Hold_Delay").SetDynamicLink(deviceTag.GetVariable("Input_Hold_Delay"), DynamicLinkMode.ReadWrite);
      }
 
-    private void AB_DIG_CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
-    {
-        Obj.GetVariable("TableName").ResetDynamicLink();
-        Obj.GetVariable("TableName").Value = Obj.Owner.BrowseName + "_CIV";
-
-        Obj.GetVariable("Store").ResetDynamicLink();
-        Obj.GetVariable("Store").SetDynamicLink(Project.Current.GetVariable("DataStores/" + Obj.Owner.Owner.Owner.BrowseName + "/Filename"), DynamicLinkMode.ReadWrite);
-        string tmp = Obj.GetVariable("Store").GetVariable("DynamicLink").Value;
-        Obj.GetVariable("Store").GetVariable("DynamicLink").Value = tmp.Replace("/Filename", "@NodeId");
-
-    }
+    
     private void AB_DIG_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
         string area = Obj.Owner.Owner.BrowseName;
@@ -608,7 +819,7 @@ public class BuildLinks : BaseNetLogic
                     AB_VLV_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_VLV_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -663,10 +874,7 @@ public class BuildLinks : BaseNetLogic
     }
     
 
-    private void AB_VLV_CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
-    {
 
-    }
     private void AB_VLV_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
         string almDesc = Obj.BrowseName;
@@ -714,7 +922,7 @@ public class BuildLinks : BaseNetLogic
                     AB_MTR_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_MTR_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -822,7 +1030,8 @@ public class BuildLinks : BaseNetLogic
                     AB_VFD_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_VFD_CIV_Logger(chld, Station);
+                    //AB_VFD_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -959,7 +1168,8 @@ public class BuildLinks : BaseNetLogic
                     AB_SEQ_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_SEQ_CIV_Logger(chld, Station);
+                    //AB_SEQ_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -1136,7 +1346,7 @@ public class BuildLinks : BaseNetLogic
                     AB_PID_UDT(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_PID_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -1259,7 +1469,7 @@ public class BuildLinks : BaseNetLogic
     }
 
 
-
+    
     /*************************************************************************************************************
     **************************************** AB Calculated Values ************************************************
     **************************************************************************************************************/
@@ -1276,22 +1486,17 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Device_Name").ResetDynamicLink();
         Obj.GetVariable("Device_Name").Value = Obj.BrowseName;
 
-        //Get the device
-        //var deviceTag = Station.GetVariable("Tags/Controller Tags/" + Obj.Owner.BrowseName);
-        //var deviceTag = Station.GetVariable("Tags/Controller Tags/" + Obj.BrowseName);
-        var deviceTag = Station.GetVariable("Tags/Controller Tags/" + Obj.Owner.Owner.BrowseName);
+
 
         Obj.GetVariable("Value").ResetDynamicLink();
-
-        Log.Info("Tags/Controller Tags/Calc_Value" + "[" + $"{Obj.BrowseName}" + "]");
-
-        //../../../../../CommDrivers/RAEtherNet_IPDriver1/AB_MIEX_Mini/Tags/Controller Tags/Calc_Value[4]
-
-        //Obj.GetVariable("Value").SetDynamicLink(deviceTag.GetVariable("[" + $"{Obj.BrowseName}" + "]"), DynamicLinkMode.ReadWrite);
-        //Obj.GetVariable("Value").SetDynamicLink(Station.GetVariable("Tags/Controller Tags/Calc_Value[4]"), DynamicLinkMode.ReadWrite);
-        //Obj.GetVariable("Value").SetDynamicLink(Station.GetVariable("Tags/Controller Tags/Calc_Value" + "[" + $"{Obj.BrowseName}" + "]"), DynamicLinkMode.ReadWrite);
-
-
+        var myVar = Obj.GetVariable("Value");                                // Get the variable
+        IUAVariable tempVariable2 = null;                                    // Create a fake variable            
+        myVar.SetDynamicLink(tempVariable2, DynamicLinkMode.ReadWrite);      // Add a dynamic link to the fake variable (to trigger the link mechanism)
+        string string1 = "../../../../../CommDrivers/RAEtherNet_IPDriver1/AB_MagnaPak";  // @Erik  how to make this dynamic??
+        string string2 = "/Tags/Controller Tags/Calc_Value";
+        string string3 = "[" + Obj.BrowseName +"]";
+        string strings = string1 + string2 + string3;                       // ../../../../../CommDrivers/RAEtherNet_IPDriver1/AB_MagnaPak/Tags/Controller Tags/Calc_Value[0]                                                                      
+        myVar.GetVariable("DynamicLink").Value = strings;                   // Replace the dynamic link content to the real target value   
     }
 
 
@@ -1314,7 +1519,8 @@ public class BuildLinks : BaseNetLogic
                     AB_Bools_Alarm(chld, Station);
                     break;
                 case "DataLogger":
-                    AB_Bools_CIV_Logger(chld, Station);
+                    //AB_Bools_CIV_Logger(chld, Station);
+                    DataLogger(chld, Station);
                     break;
                 default:
                     break;
@@ -1333,14 +1539,16 @@ public class BuildLinks : BaseNetLogic
         Obj.GetVariable("Device_Name").ResetDynamicLink();
         Obj.GetVariable("Device_Name").Value = Obj.Owner.BrowseName;
 
-        //Get the device
-        var deviceTag = Station.GetVariable("Tags/Controller Tags/");
 
         Obj.GetVariable("Value").ResetDynamicLink();
-        
-        //Obj.GetVariable("Value").SetDynamicLink(deviceTag.GetVariable("/BOOLS[0]"), DynamicLinkMode.ReadWrite);
-
-
+        var myVar = Obj.GetVariable("Value");                                // Get the variable
+        IUAVariable tempVariable2 = null;                                    // Create a fake variable            
+        myVar.SetDynamicLink(tempVariable2, DynamicLinkMode.ReadWrite);      // Add a dynamic link to the fake variable (to trigger the link mechanism)
+        string string1 = "../../../../../../CommDrivers/RAEtherNet_IPDriver1/AB_MagnaPak";  // @Erik  how to make this dynamic??
+        string string2 = "/Tags/Controller Tags/BOOLS";
+        string string3 = "[" + Obj.Owner.BrowseName +"]";
+        string strings = string1 + string2 + string3;                       // ../../../../../../CommDrivers/RAEtherNet_IPDriver1/AB_MagnaPak/Tags/Controller Tags/BOOLS[0]
+        myVar.GetVariable("DynamicLink").Value = strings;                   // Replace the dynamic link content to the real target value   
     }
 
     private void AB_Bools_CIV_Logger(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
@@ -1356,12 +1564,69 @@ public class BuildLinks : BaseNetLogic
     }
     private void AB_Bools_Alarm(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
-        //string area = Obj.Owner.Owner.BrowseName;
-        //string device_name = Obj.Owner.BrowseName;
-        //string device_description = Obj.Owner.GetVariable("DIG/Device_Description").Value;
+        string area = Obj.Owner.Owner.BrowseName;
+        string device_name = Obj.Owner.BrowseName;
+        string device_description = Obj.Owner.GetVariable("Bool/Device_Description").Value;
 
-        //Obj.GetVariable("Message").ResetDynamicLink();
-        //Obj.GetVariable("Message").Value = $"Alarm {device_name} {area} {device_description}";
+        Obj.GetVariable("Message").ResetDynamicLink();
+        Obj.GetVariable("Message").Value = $"Alarm {device_name} {area} {device_description}";
+        
+    }
+
+
+    /*************************************************************************************************************
+    ****************************************    AB Accumulator    ************************************************
+    **************************************************************************************************************/
+    private void AB_ACC_Object(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
+    {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
+
+        Obj.GetVariable("PLC").ResetDynamicLink();
+        Obj.GetVariable("PLC").Value = Obj.Owner.Owner.BrowseName;
+
+        Obj.GetVariable("Area").ResetDynamicLink();
+        Obj.GetVariable("Area").Value = Obj.Owner.BrowseName;
+
+        Obj.GetVariable("Device_Name").ResetDynamicLink();
+        Obj.GetVariable("Device_Name").Value = Obj.BrowseName;
+
+        //Get the device
+        var deviceTag = Station.GetVariable("Tags/Controller Tags/" + Obj.Owner.BrowseName);
+
+        Obj.GetVariable("This_Day").ResetDynamicLink();
+        Obj.GetVariable("This_Day").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/This_Day"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("This_Week").ResetDynamicLink();
+        Obj.GetVariable("This_Week").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/This_Week"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("This_Month").ResetDynamicLink();
+        Obj.GetVariable("This_Month").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/This_Month"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("This_Year").ResetDynamicLink();
+        Obj.GetVariable("This_Year").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/This_Year"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("This_Lifetime").ResetDynamicLink();
+        Obj.GetVariable("This_Lifetime").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/This_Lifetime"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Last_Day").ResetDynamicLink();
+        Obj.GetVariable("Last_Day").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Last_Day"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Last_Week").ResetDynamicLink();
+        Obj.GetVariable("Last_Week").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Last_Week"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Last_Month").ResetDynamicLink();
+        Obj.GetVariable("Last_Month").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Last_Month"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Last_Year").ResetDynamicLink();
+        Obj.GetVariable("Last_Year").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Last_Year"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Average_Count").ResetDynamicLink();
+        Obj.GetVariable("Average_Count").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Average_Count"), DynamicLinkMode.ReadWrite);
+
+        Obj.GetVariable("Average_Value").ResetDynamicLink();
+        Obj.GetVariable("Average_Value").SetDynamicLink(deviceTag.GetVariable($"{Obj.BrowseName}" + "/Average_Value"), DynamicLinkMode.ReadWrite);
+
+        
     }
 
 
@@ -1392,78 +1657,14 @@ public class BuildLinks : BaseNetLogic
 
 
 
-    private void Build_S7TiaProfinetStation(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
-    {
-      
-        foreach (IUAObject chld in Obj.Children)
-        {
-            switch (chld.ObjectType.BrowseName)
-            {
-                case "PLC_UDT":
-                    SIE_PLC(chld, Station);
-                    break;
-                case "BaseObjectType":
-                    if (chld.BrowseName == "Config")
-                    {
-                        SIE_Config(chld, Station);
-                    }
-                    else
-                    {
-                        foreach (IUAObject item in chld.Children)
-                        {
-                            switch (item.ObjectType.BrowseName)
-                            {
-                                case "ALZ_object":
-                                    SIE_ALZ_Object(item, Station);
-                                    break;
-                                case "LVL_object":
-                                    SIE_LVL_Object(item, Station);
-                                    break;
-                                case "DIG_object":
-                                    SIE_DIG_Object(item, Station);
-                                    break;
-                                case "VLV_object":
-                                    SIE_VLV_Object(item, Station);
-                                    break;
-                                case "MTR_object":
-                                    SIE_MTR_Object(item, Station);
-                                    break;
-                                case "VFD_object":
-                                    SIE_VFD_Object(item, Station);
-                                    break;
-                                case "SEQ_object":
-                                    SIE_SEQ_Object(item, Station);
-                                    break;
-                                case "PID_object":
-                                    SIE_PID_Object(item, Station);
-                                    break;
-                                case "Setpoints_UDT":
-                                    SIE_Setpoints_Object(item, Station);
-                                    break;
-                                case "CV_UDT":
-                                    SIE_CV_Object(item, Station);
-                                    break;
-                                case "Bools_object":
-                                    SIE_Bools_Object(item, Station);
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
-                    }
-                    break;
-            }
-        }
 
-        Log.Info($"Siemens {Obj.BrowseName} {Station.BrowseName}");
-    }
 
-/*************************************************************************************************************
-****************************************     Siemens   PLC    ************************************************
-**************************************************************************************************************/
+    /*************************************************************************************************************
+    ****************************************     Siemens   PLC    ************************************************
+    **************************************************************************************************************/
     private void SIE_PLC(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
-        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
         //Obj.GetVariable("PLC").ResetDynamicLink();
         //Obj.GetVariable("PLC").Value = Obj.Owner.BrowseName;
 
@@ -1478,36 +1679,49 @@ public class BuildLinks : BaseNetLogic
 
     }
 
+
     /*************************************************************************************************************
     ****************************************   Siemens Config     ************************************************
     **************************************************************************************************************/
     private void SIE_Config(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
-
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
-     /*************************************************************************************************************
-     ***************************************  Siemens Analyzer     ************************************************
-     **************************************************************************************************************/
 
-
-
-     private void SIE_ALZ_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
+    /*************************************************************************************************************
+    ****************************************      AB Analyzer     ************************************************
+    **************************************************************************************************************/
+    private void SIE_ALZ_Object(IUAObject Obj, FTOptix.RAEtherNetIP.Station Station)
     {
-
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
     }
+   
+
+    /*************************************************************************************************************
+    ***************************************  Siemens Analyzer     ************************************************
+    **************************************************************************************************************/
+    private void SIE_ALZ_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
+    {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
+    }
+    
+
     /*************************************************************************************************************
     ****************************************  Siemens Level       ************************************************
     **************************************************************************************************************/
     private void SIE_LVL_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
     }
+
 
     /*************************************************************************************************************
     ***************************************   Siemens Digital     ************************************************
     **************************************************************************************************************/
     private void SIE_DIG_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}");
     }
 
 
@@ -1516,6 +1730,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_VLV_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
 
@@ -1524,6 +1739,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_MTR_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
     /*************************************************************************************************************
@@ -1531,6 +1747,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_VFD_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
 
@@ -1539,6 +1756,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_SEQ_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
     /*************************************************************************************************************
@@ -1546,6 +1764,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_PID_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
     /*************************************************************************************************************
@@ -1553,6 +1772,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_Setpoints_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
 
@@ -1561,6 +1781,7 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_CV_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        Log.Info($"Adding Device - {Obj.Owner.Owner.Owner.BrowseName} -> {Obj.Owner.Owner.BrowseName} -> {Obj.Owner.BrowseName} -> {Obj.BrowseName}"); 
     }
 
 
@@ -1569,12 +1790,14 @@ public class BuildLinks : BaseNetLogic
     **************************************************************************************************************/
     private void SIE_Bools_Object(IUAObject Obj, FTOptix.S7TiaProfinet.Station Station)
     {
+        
     }
 
 
 
     private LongRunningTask myLongRunningTask;
 }
+
 
 
 

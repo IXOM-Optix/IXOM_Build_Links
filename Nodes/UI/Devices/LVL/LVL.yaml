@@ -1333,7 +1333,6 @@ Children:
     - Name: Store
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/IXOM_Build_Links/DataStores/EmbeddedDatabase1"
       Children:
       - Name: Kind
         Type: PropertyType
@@ -1422,7 +1421,6 @@ Children:
     - Name: Store
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/IXOM_Build_Links/DataStores/EmbeddedDatabase1"
       Children:
       - Name: Kind
         Type: PropertyType

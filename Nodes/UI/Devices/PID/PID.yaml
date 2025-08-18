@@ -514,11 +514,6 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:01.0000000"
-    - Name: TableName
-      Type: PropertyType
-      DataType: String
-      ModellingRule: Optional
-      Value: "ALZ"
     - Name: LogVariableTimestamp
       Type: PropertyType
       DataType: Boolean
